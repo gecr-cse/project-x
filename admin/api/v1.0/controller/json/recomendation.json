@@ -1,0 +1,44 @@
+REQUEST:
+
+{
+  "requestMessage": "trendCauses",
+  "requestId": "51",
+  "requestData": [
+{
+"causeId":"54"
+}
+  ]
+}
+
+RESPONSE SUCCESS :
+{
+  "requestMessage": "recomendedCauses",
+  "requestId": "51",
+  "resultCode": "success",
+  "resultData": [
+    {
+      "serachList": [
+        {
+          "causeId": "2",
+          "causeName": "new",
+          "categoryName": "cancer",
+          "causeUrl": "http://new.com",
+          "communityId": "2",
+          "categoryUrl": "www.cancer.com",
+          "totalRaise": "5422",
+          "causeDescription": "dfgrgdgdrg",
+          "goal": "500000",
+          "donorsCount": "2"
+        }
+      ]
+    }
+  ]
+}
+RESPONSE FAILURE :
+{
+  "requestMessage": "recomendedCauses",
+  "requestId": "51",
+  "resultCode": "Unsuccess",
+  "resultMessageCode": "110",
+  "resultData": "No result found"
+}

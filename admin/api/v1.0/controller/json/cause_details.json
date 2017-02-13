@@ -1,0 +1,63 @@
+REQUESt:
+{
+  "requestMessage": "trendCauses",
+  "requestId": "41",
+  "requestData": [
+{
+"causeId":"2"
+}
+  ]
+}
+RESPONSE SUCCESS:
+{
+  "requestMessage": "CauseDetail",
+  "requestId": "41",
+  "resultCode": "success",
+  "resultData": [
+    {
+      "searchDetails": [
+        {
+          "causeId": "2",
+          "causeName": "new",
+          "categoryName": "cancer",
+          "causeUrl": "http://new.com",
+          "communityId": "2",
+          "categoryUrl": "www.cancer.com",
+          "totalRaise": "5422",
+          "causeDescription": "dfgrgdgdrg",
+          "goal": "500000",
+          "donorsCount": "2",
+          "donorsDetails": [
+            {
+              "name": "admin",
+              "amount": "1542725725",
+              "date": "2016-04-04 15:10:35"
+            },
+            {
+              "name": "",
+              "amount": "5",
+              "date": "2016-04-04 16:22:39"
+            }
+          ],
+          "aboutNgo": [
+            {
+              "name": "Agamya",
+              "contactPerson": "Swamy T P K",
+              "verified": "verified",
+              "CummunityUrl": "www.agamya@in"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+RESPONSE FAILURE:
+{
+  "requestMessage": "CauseDetail",
+  "requestId": "41",
+  "resultCode": "Unsuccess",
+  "resultMessageCode": "110",
+  "resultData": "No result found"
+}

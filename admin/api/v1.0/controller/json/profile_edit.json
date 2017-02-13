@@ -1,0 +1,136 @@
+user EDIT
+
+{
+  "requestMessage": "userApplication",
+  "requestId": "91",
+  "requestData":
+  [{
+	"UserId":"user",
+	"name":"User Name N",
+	"email":"user@abc.com",
+	"password":"*******",
+	"emailVerify":"*******",
+	"phone_number":"258282",
+	"pin_code":"258282",
+	"photo":"258282",
+	"dob":"258282",
+	"gender":"258282",
+	
+	
+  ]}
+}
+
+USER APPLICATION  edit - RESPONSE -SUCCESS
+
+{
+  "requestMessage": "userApplication",
+  "requestId": "91",
+  "resultCode": "Success"
+  "resultData": [{"message":"User Profile Updated successfully"}]
+}
+
+USER APPLICATION  edit - RESPONSE -Failure
+{
+  "requestMessage": "userApplication",
+  "requestId": "91",
+  "resultCode": "Unsuccess"
+  "resultData": [{"message":"User Update Failed"}]
+}
+
+COMMUNITY APPLICATION EDIT- REQUEST
+
+{
+  "requestMessage": "communityApplication",
+  "requestId": "92",
+  "requestData":
+  [{
+	"communityId":"user",
+	"communityName":"user",
+	"communityLink":"user",
+	"line1":"user",
+	"line2":"user",
+	"town":"user",
+	"city":"user",
+	"state":"user",
+	"pinCode":"user",
+	"country":"user",
+	"description":"user",
+	"country":"user",
+	"communityIcon":"user",
+	"defaultBank":"user",
+	"bankName":"user",
+	"bankUserName":"user",
+	"bankAccountNumber":"user",
+	"bankIfsc":"user"
+	
+  ]}
+}
+
+
+
+COMMUNITY APPLICATION edit - RESPONSE -SUCCESS
+
+{
+  "requestMessage": "communityApplication",
+  "requestId": "92",
+  "resultCode": "Success"
+  "resultData": [{"message":"Profile Updated successfully"}]
+}
+	
+COMMUNITY APPLICATION edit - RESPONSE -FAILURE
+{
+  "requestMessage": "communityApplication",
+  "requestId": "92",
+  "resultCode": "Unsuccess"
+  "resultData": [{"message":"Community Update Failed"}]
+}
+
+CAUSE APPLICATION EDIT- REQUEST
+
+{
+  "requestMessage": "causeApplication",
+  "requestId": "93",
+  "requestData":
+  [{
+	"causeId":"user",
+	"causeName":"user",
+	"causeType":"user",
+	"categoryId":"user",
+	"userId" : "user",
+	"communityId":"user",
+	"causeDescription":"user",
+	"line1":"user",
+	"line2":"user",
+	"town":"user",
+	"city":"user",
+	"state":"user",
+	"pinCode":"user",
+	"country":"user",
+	"imageUrl":"user",
+	"startDate":"user",
+	"endDate":"user",
+	"targetAmount":"user",
+	"overFlow":"user",
+	"defaultBank":"user",
+	"bankName":"user",
+	"bankUserName":"user",
+	"bankAccountNumber":"user",
+	"bankIfsc":"user"
+	
+  ]}
+}
+CAUSE APPLICATION edit- RESPONSE -SUCCESS
+
+{
+  "requestMessage": "causeApplication",
+  "requestId": "93",
+  "resultCode": "Success"
+  "resultData": [{"message":"Cause Profile Updated successfully"}]
+}
+CAUSE APPLICATION edit - RESPONSE -FAILURE
+{
+  "requestMessage": "causeApplication",
+  "requestId": "93",
+  "resultCode": "Unsuccess"
+  "resultData": [{"message":"Cause Profile Update Failed"}]
+}

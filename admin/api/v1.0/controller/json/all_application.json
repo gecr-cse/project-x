@@ -1,0 +1,125 @@
+USER APPLICATION - REQUEST
+
+{
+  "requestMessage": "userApplication",
+  "requestId": "71",
+  "requestData":
+  [{
+	"name":"User Name N",
+	"email":"user@abc.com"
+	"password":"*******"
+	"emailVerify":"*******"
+  ]}
+}
+
+USER APPLICATION - RESPONSE -SUCCESS
+
+{
+  "requestMessage": "userApplication",
+  "requestId": "71",
+  "resultCode": "Success"
+  "resultData": [{"message":"Profile created successfully"}]
+}
+
+
+COMMUNITY APPLICATION - REQUEST
+
+{
+  "requestMessage": "communityApplication",
+  "requestId": "75",
+  "requestData":
+  [{
+	"communityName":"user",
+	
+	"communityEmail":"user",
+	"password":"user",
+	"passwordVerify":"user",
+	"photo":"user",
+	"dob":"user",
+	"gender":"user",
+	"communityPhoneNumber":"user",
+	"communityPinCode":"user",
+	
+	"contactPerson":"user",
+	"phoneNumber":"user",
+	"contactPersonEmail":"user",
+	"communityType":"user",
+	"communityDescription":"user",
+	"line1":"user",
+	"line2":"user",
+	"town":"user",
+	"city":"user",
+	"state":"user",
+	"pinCode":"user",
+	"country":"user",
+	"communityLink":"user",
+	"country":"user",
+	"communityIcon":"user",
+	"defaultBank":"user",
+	"bankName":"user",
+	"bankUserName":"user",
+	"bankAccountNumber":"user",
+	"bankIfsc":"user"
+	
+  }]
+}
+
+COMMUNITY APPLICATION - RESPONSE -SUCCESS
+
+{
+  "requestMessage": "communityApplication",
+  "requestId": "75",
+  "resultCode": "Success"
+  "resultData": [{"message":"Profile created successfully"}]
+}
+COMMUNITY APPLICATION RESPONSE FAILURE
+{
+  "requestMessage": "communityApplication",
+  "requestId": "75",
+  "resultCode": "Unsuccess"
+  "resultData": [{"message":"Community Ctreation Failed"}]
+}
+
+
+
+CAUSE APPLICATION - REQUEST
+
+{
+  "requestMessage": "causeApplication",
+  "requestId": "81",
+  "requestData":
+  [{
+	"causeName":"user",
+	"causeType":"user",
+	"categoryId":"user",
+	"userId" : "user",
+	"communityId":"user",
+	"causeDescription":"user",
+	"line1":"user",
+	"line2":"user",
+	"town":"user",
+	"city":"user",
+	"state":"user",
+	"pinCode":"user",
+	"country":"user",
+	"imageUrl":"user",
+	"startDate":"user",
+	"endDate":"user",
+	"targetAmount":"user",
+	"overFlow":"user",
+	"defaultBank":"user",
+	"bankName":"user",
+	"bankUserName":"user",
+	"bankAccountNumber":"user",
+	"bankIfsc":"user"
+	
+  ]}
+}
+CAUSE APPLICATION - RESPONSE -SUCCESS
+
+{
+  "requestMessage": "causeApplication",
+  "requestId": "81",
+  "resultCode": "Success"
+  "resultData": [{"message":"Profile created successfully"}]
+}

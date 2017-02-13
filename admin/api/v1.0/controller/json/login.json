@@ -1,0 +1,60 @@
+
+LOGIN REQUEST
+{
+  "requestMessage": "userLogin",
+  "requestId": "25",
+  "requestData":
+  [{
+	"email":"user@abc.com"
+	"password":"*******"
+  ]}
+}
+
+LOGIN RESPONSE SUCCESS
+{
+  "requestMessage": "userLogin",
+  "requestId": "25",
+  "resultCode": "Success"
+  "resultData": [{"message":"Login successfull"}]
+}
+LOGIN RESPONSE FAILURE
+{
+  "requestMessage": "userLogin",
+  "requestId": "25",
+  "resultCode": "Unsuccess"
+  "resultData": [{"message":"Login Failed"}]
+}
+
+
+
+FORGOT PASSWORD REQUEST
+
+{
+  "requestMessage": "forgotPassword",
+  "requestId": "26",
+  "requestData":
+  [{
+	"email":"user@abc.com"
+  ]}
+}
+
+FORGOT PASSWORD RESPONSE SUCCESS
+{
+  "requestMessage": "forgotPassword",
+  "requestId": "26",
+  "resultCode": "Success"
+  "resultData": 
+             [{
+			   "message":"Password changed successfully, please check your inbox for new Password.",
+			  }]
+}
+FORGOT PASSWORD RESPONSE FAILURE
+{
+  "requestMessage": "forgotPassword",
+  "requestId": "26",
+  "resultCode": "Unsuccess"
+  "resultData": [{
+				  "message":"Email not found, use registered Email."
+				}]
+}
+

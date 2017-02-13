@@ -1,0 +1,107 @@
+Community JSONS
+
+ Dashboard  - REQUEST
+
+	{
+	  "requestMessage": "dashboard",
+	  "requestId": "82",
+	  "requestData":
+	  [{
+		"communityId":"45",
+	  ]}
+	}
+ Dashboard - RESPONSE -SUCCESS
+
+	{
+	  "requestMessage": "dashboard",
+	  "requestId": "82",
+	  "resultCode": "Success"
+	  "resultData": 
+				   [{
+					 "totalDonation":"User Name N",
+					 "causeCount":"user@abc.com",
+					 "password":"*******"
+				   }]
+    }
+ DASHBOARD RESPONSE FAILURE
+	{
+	  "requestMessage": "dashboard",
+	  "requestId": "82",
+	  "resultCode": "Unsuccess"
+	  "resultData": [{"message":"Details not found"}]
+	}	
+	
+ 
+DONATION  - REQUEST
+
+	{
+	  "requestMessage": "donation",
+	  "requestId": "83",
+	  "requestData":
+	  [{
+		"donationFor":"community",
+		"communityId":"45",
+	  ]}
+	}
+ DONATION - RESPONSE -SUCCESS
+
+	{
+	  "requestMessage": "donation",
+	  "requestId": "83",
+	  "resultCode": "Success"
+	  "resultData": 
+				   [{
+					 "causeName":"User Name N",
+					 "category":"user@abc.com",
+					 "startDate":"user@abc.com",
+					 "endDate":"user@abc.com",
+					 "fundRaised":"user@abc.com",
+					 "targetAmount":"*******"
+				   }]
+    }
+ DONATION RESPONSE FAILURE
+	{
+	  "requestMessage": "donation",
+	  "requestId": "83",
+	  "resultCode": "Unsuccess"
+	  "resultData": [{"message":"No Details found"}]
+	}	
+	
+CAUSE REQUESTS  - REQUEST
+
+	{
+	  "requestMessage": "causeRequests",
+	  "requestId": "84",
+	  "requestData":
+	  [{
+		"communityId":"45",
+		"approved":"yes or no",
+		
+	  ]}
+	}
+ CAUSEREQUESTS - RESPONSE -SUCCESS
+
+	{
+	  "requestMessage": "causeRequests",
+	  "requestId": "84",
+	  "resultCode": "Success"
+	  "resultData": 
+				   [{
+					 "causeName":"User Name N",
+					 "category":"user@abc.com",
+					 "startDate":"user@abc.com",
+					 "endDate":"user@abc.com",
+					 "fundRaised":"user@abc.com",
+					 "targetAmount":"*******",
+					 "accepted":"yes"
+					 
+				   }]
+    }
+ CAUSEREQUESTS RESPONSE FAILURE
+	{
+	  "requestMessage": "causeRequests",
+	  "requestId": "84",
+	  "resultCode": "Unsuccess"
+	  "resultData": [{"message":"No Details found"}]
+	}	
+	
