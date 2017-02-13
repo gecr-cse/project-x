@@ -1,0 +1,6 @@
+*.php= All the HTML view will be coded in this file name extension
+include folder=used to include the header, footer and side bar to all the files
+admin= contanis all the code relating to the admin panel and api for mobile application
+Documentation=Contais all the documentation for SRS, wireframe, UI and test cases
+
+

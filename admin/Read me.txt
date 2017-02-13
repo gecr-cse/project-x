@@ -1,0 +1,4 @@
+api folder=this folder contains all the api calls which is used to for mobile application
+assets=contans all the css, font, javascript files
+systems=contans all the logic and sql query
+views= contans all the html view for admin panel
