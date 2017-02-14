@@ -5,6 +5,10 @@ include_once "../../system/plugins/messages/class.messages.php";
 include_once "../../system/plugins/mails/mail.php";
 include_once "../../system/manager/login-manager.php";
 include_once "../../system/manager/student-manager.php";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 78789920bd451b571f18c977fa8939343756a00b
 
 
 /*
@@ -26,6 +30,7 @@ class loginController
         $this->common = new Common();
         $this->student= new studentManager();
     }
+<<<<<<< HEAD
 
 
 }*/
@@ -80,7 +85,7 @@ function validate($id,$pass) {
            $_SESSION["user_id"] = $id;
            $_SESSION["user_pass"] = $pass;
            echo "Login successfull<br>";
-           echo "session created for current user with <b>\"user name\"</b> as \"<b>".$_SESSION["user_id"] ."</b>\"and <b>\"password\"</b> as \"<b>" .$_SESSION["user_pass"] . "</b>\"";                             
+           echo "session created for current user with <b>\"user name\"</b> as \"<b>".$_SESSION["user_id"] ."</b>\"and <b>\"password\"</b> as \"<b>" .$_SESSION["user_pass"] . "</b>\"";
            break;
          }
          else {
@@ -100,3 +105,10 @@ function validate($id,$pass) {
 
 
 ?>
+=======
+    function loginProcess()
+    {
+
+    }
+}
+>>>>>>> 78789920bd451b571f18c977fa8939343756a00b
