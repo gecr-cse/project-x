@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 13, 2017 at 11:43 AM
+-- Generation Time: Feb 14, 2017 at 09:31 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -31,7 +31,7 @@ CREATE TABLE `department` (
   `dept_name` text NOT NULL,
   `dept_image` varchar(100) NOT NULL,
   `is_active` enum('yes','no') NOT NULL DEFAULT 'yes',
-  `added_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `added_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -39,15 +39,15 @@ CREATE TABLE `department` (
 --
 
 INSERT INTO `department` (`dept_id`, `dept_name`, `dept_image`, `is_active`, `added_on`) VALUES
-(1, 'dsfasadsfzx', '', 'no', '2017-02-11 22:26:31'),
-(2, 'zdxf', 'sdfr', '', '2017-02-11 20:42:25'),
-(3, 'dsfds', 'abc.jpg', 'yes', '2017-02-11 20:43:21'),
-(4, 'subbu dept', 'abc.jpg', 'no', '2017-02-11 22:32:33'),
-(5, 'what', 'abc.jpg', 'no', '2017-02-11 22:32:57'),
-(6, 'zscXCV', 'abc.jpg', 'yes', '2017-02-11 21:02:54'),
-(7, 'safd', 'abc.jpg', 'yes', '2017-02-11 21:03:30'),
-(8, 'dddd', 'abc.jpg', 'no', '2017-02-12 02:57:37'),
-(9, 'bla', 'abc.jpg', 'yes', '2017-02-11 22:23:21');
+(1, 'dsfasadsfzx', '', 'no', '2017-02-11 16:56:31'),
+(2, 'zdxf', 'sdfr', '', '2017-02-11 15:12:25'),
+(3, 'dsfds', 'abc.jpg', 'yes', '2017-02-11 15:13:21'),
+(4, 'subbu dept', 'abc.jpg', 'no', '2017-02-11 17:02:33'),
+(5, 'what', 'abc.jpg', 'no', '2017-02-11 17:02:57'),
+(6, 'zscXCV', 'abc.jpg', 'yes', '2017-02-11 15:32:54'),
+(7, 'safd', 'abc.jpg', 'yes', '2017-02-11 15:33:30'),
+(8, 'dddd', 'abc.jpg', 'no', '2017-02-11 21:27:37'),
+(9, 'bla', 'abc.jpg', 'yes', '2017-02-11 16:53:21');
 
 -- --------------------------------------------------------
 
@@ -116,8 +116,20 @@ CREATE TABLE `image` (
   `image_id` int(11) NOT NULL,
   `source_id` int(11) NOT NULL,
   `source_type` enum('news','issue') NOT NULL,
-  `image_path` varchar(500) NOT NULL
+  `image_path` varchar(500) NOT NULL,
+  `is_active` enum('yes','no') NOT NULL DEFAULT 'yes',
+  `added_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `image`
+--
+
+INSERT INTO `image` (`image_id`, `source_id`, `source_type`, `image_path`, `is_active`, `added_on`) VALUES
+(1, 1, 'news', 'asdf', 'yes', '2017-02-13 18:08:07'),
+(2, 2, 'news', 'sad', 'yes', '2017-02-13 18:08:07'),
+(17, 1, 'issue', '1487014079WhatsApp Image 2017-02-07 at 6.10.12 PM.jpeg', 'yes', '2017-02-13 19:27:59'),
+(18, 1, 'issue', '1487014185WhatsApp Image 2017-02-07 at 6.10.12 PM.jpeg', 'yes', '2017-02-13 19:29:45');
 
 -- --------------------------------------------------------
 
@@ -149,7 +161,13 @@ INSERT INTO `issues` (`issue_id`, `student_id`, `dept_id`, `issue_title`, `issue
 (6, 9, 0, 'dsafASDF', 'DSAF', 'in_progress', 'yes', '2017-02-12 13:44:28'),
 (7, 1, 9, 'titel', 'desct', 'in_progress', 'yes', '2017-02-12 13:45:04'),
 (8, 1, 9, 'wht sup', 'adsfasdf', 'in_progress', 'yes', '2017-02-12 13:51:33'),
-(9, 1, 9, 'i have a big issue', 'i have to walk 3 stories ', 'in_progress', 'yes', '2017-02-13 10:17:52');
+(9, 1, 9, 'i have a big issue', 'i have to walk 3 stories ', 'in_progress', 'yes', '2017-02-13 10:17:52'),
+(10, 1, 9, 'title', 'description', 'in_progress', 'yes', '2017-02-13 19:23:57'),
+(11, 1, 9, 'sadf', 'dsf', 'in_progress', 'yes', '2017-02-13 19:25:55'),
+(12, 1, 9, 'sadf', 'dsf', 'in_progress', 'yes', '2017-02-13 19:26:39'),
+(13, 1, 9, 'sadf', 'dsf', 'in_progress', 'yes', '2017-02-13 19:27:18'),
+(14, 1, 9, 'ds', 'f', 'in_progress', 'yes', '2017-02-13 19:27:59'),
+(15, 1, 9, 'ds', 'f', 'in_progress', 'yes', '2017-02-13 19:29:45');
 
 -- --------------------------------------------------------
 
@@ -173,9 +191,15 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`news_id`, `dept_id`, `news_title`, `news_desc`, `video`, `creater_id`, `is_active`, `added_on`) VALUES
-(1, 9, 'title', '  description adsfdasfadsfadsfadsfadsfads ', 'video', '1', 'yes', '2017-02-11 20:40:18'),
-(2, 7, 'whats p', 'its description', 'url', '2', 'yes', '2017-02-11 20:40:22'),
-(3, 7, 'this is the title 1', 'description new', 'video url new', '3', 'yes', '2017-02-11 20:34:12');
+(1, 7, 'news title', 'whats p', 'dsagfasdf', '11', 'yes', '2017-02-13 18:35:28'),
+(2, 9, 'safd', 'dsaf', '1', '11', 'yes', '2017-02-13 18:36:41'),
+(3, 7, 'sdf', 'dsf', 'dsf', '11', 'yes', '2017-02-13 18:37:49'),
+(4, 7, 'asd', 'fdsasdsad', 'werewq', '11', 'yes', '2017-02-13 18:38:28'),
+(5, 7, 'asd', 'fdsasdsad', 'werewq', '11', 'yes', '2017-02-13 18:40:25'),
+(6, 7, 'saf', 'dsf', 'dsaf', '11', 'yes', '2017-02-13 18:40:34'),
+(7, 6, 'dsf', 'dsfdsfas', 'dsafa', '1', 'yes', '2017-02-13 18:42:45'),
+(8, 9, 'dddd', 'qdff', 'dfs', '1', 'yes', '2017-02-13 18:50:08'),
+(9, 7, 'title', 'description', 'url', '1', 'yes', '2017-02-13 18:54:31');
 
 -- --------------------------------------------------------
 
@@ -197,7 +221,7 @@ CREATE TABLE `student` (
   `device_version` varchar(10) NOT NULL,
   `app_version` varchar(10) NOT NULL,
   `is_active` enum('yes','no') NOT NULL,
-  `added_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `added_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -205,7 +229,7 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`student_id`, `name`, `roll_no`, `mobile`, `email`, `verification_no`, `dept_id`, `device_id`, `gcm_id`, `device_type`, `device_version`, `app_version`, `is_active`, `added_on`) VALUES
-(1, 'subramanya', '1111', '9901027651', 'cnsubbuk143@gmail.com', '', '9', '', '', '', '', '', 'yes', '2017-02-12 15:31:19');
+(1, 'subramanya', '1111', '9901027651', 'cnsubbuk143@gmail.com', '', '9', '', '', '', '', '', 'yes', '2017-02-12 10:01:19');
 
 -- --------------------------------------------------------
 
@@ -307,17 +331,17 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `image`
 --
 ALTER TABLE `image`
-  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `issues`
 --
 ALTER TABLE `issues`
-  MODIFY `issue_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `issue_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `student`
 --
