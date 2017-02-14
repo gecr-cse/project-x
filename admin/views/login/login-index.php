@@ -1,76 +1,32 @@
 <?php
     include_once "../../system/controller/login-controller.php";
 
-    if(isset($_REQUEST["uid"]) && isset($_REQUEST["upass"])){
-
-      $id = $_REQUEST["uid"];
-      $pass = $_REQUEST["upass"];
-      if (!empty($id) && !empty($pass)) {
-        echo "user name: ". $id. "<br> password :" .$pass ."<br>" ;
-        vlaidate($id,$pass);
-      }
-      else {
-        echo "User name and password field empty<br>";
-      }
-    }
-    else {
-
-    }
-
-    function vlaidate($id,$pass) {
-
-
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $dbname = "mycollege";
-      //connecting to database
-      $conn = new mysqli($servername, $username, $password,$dbname);
-      //checking for error
-      if ($conn->connect_error) {
-        echo "Failed to connect to server<br>";
-      }
-      //validdating the user name and password
-
-      else{
-        echo "Connection succesfull<br>";
-        $sql = "SELECT user_name,user_pass FROM user_login";
-        if($result = $conn->query($sql))
-        {
-          echo "query runned;<br>";
-        }
-
-        if ($result->num_rows > 0) {
-
-          while ($row = $result->fetch_assoc()) {
-
-           if($id == $row["user_name"]){
-
-             if($pass == $row["user_pass"]){
-               echo "Login successfull<br>";
-               break;
-             }
-             else {
-               echo "user name and password dosen\'t match<br>";
-             }
-           }
-
-          }
-
-        }
-        else {
-          echo "no admin crated yet\n";
-        }
-      }
-    }
 
 ?>
 
-<form method="post" action="" >
-  User id
-  <input  type="text" name="uid"/>
-  Password
-  <input type="password" name="upass"/>
-  <br>
-  <input type="submit" value="Submit">
-</form>
+<table style="width: 100%; height: 100vh; position:absolute;top:0px;">
+		<tr>
+			<td valign="middle" align="center">
+				<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+
+					<table class="login_table">
+						<tr class="login_field">
+							<td><label>User Name</label></td>
+							<td><input type="text" name="uid" size="20"><br></td>
+						</tr>
+						<tr class="login_field">
+							<td><label>Password</label></td>
+							<td><input type="password" name="upass" size="20"></td>
+						</tr>
+						<tr class="login_field">
+							<td colspan="2" height="10vh"></td>
+						</tr>
+						<tr class="login_field">
+							<td><a href="#">forgot passwod ?</a></td>
+							<td><input type="submit" value="Submit" size="20"></td>
+						</tr>
+				</table>
+			</form>
+		</td>
+	</tr>
+</table>
