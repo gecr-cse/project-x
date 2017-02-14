@@ -1,0 +1,41 @@
+URL: http://subbu/pa/admin/api/v1.0/controller/user-controller.php?action=userRegister
+request:-
+{
+  "requestMessage": "userRegister",
+  "requestId": "001",
+  "requestData": [
+    {
+      "mobile_no": "9901027651"
+      
+    }
+  ]
+}
+
+success response:-
+{
+  "requestMessage": "userRegister",
+  "requestId": "001",
+  "response":"success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "An OTP is sent to your mobile... Please enter OTP sent to your mobile no.",
+	  "mobile_no":"99010027651",
+	  "otp":"65433"
+    }
+  ]
+}
+Failure Respose:- 
+
+{
+  "requestMessage": "userRegister",
+  "requestId": "001",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Mobile no not found in database. Please conctact admin"
+    }
+  ]
+}
+--------------------------------------------------------------------------
