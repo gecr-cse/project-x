@@ -1,10 +1,10 @@
 <?php
 
-include_once "../library/application.php";
-include_once "../plugins/messages/class.messages.php";
-include_once "../plugins/mails/mail.php";
-include_once "../manager/login-manager.php";
-include_once "../manager/student-manager.php";
+include_once "../../system/library/application.php";
+include_once "../../system/plugins/messages/class.messages.php";
+include_once "../../system/plugins/mails/mail.php";
+include_once "../../system/manager/login-manager.php";
+include_once "../../system/manager/student-manager.php";
 
 
 
@@ -26,6 +26,8 @@ class loginController
         $this->common = new Common();
         $this->student= new studentManager();
     }
-
-    
+    function loginProcess()
+    {
+        
+    }
 }

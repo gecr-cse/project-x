@@ -10,7 +10,7 @@ class Config {
             "HOST" => "localhost",
             "USERNAME" => "root",
             "PASSWORD" => "",
-            "DATABASE" => "pa"
+            "DATABASE" => "mycollege"
         );
     }
 
