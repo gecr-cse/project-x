@@ -3,7 +3,7 @@
   if (isset($_SESSION["user_id"]) && isset($_SESSION["user_pass"]))
   {
     if($_SESSION["user_id"]!=NULL && $_SESSION["user_pass"]!=NULL){
-		
+
       $goto = "../../views/dashboard/dashboard-index.php";
       header("Location:".$goto);
     }
