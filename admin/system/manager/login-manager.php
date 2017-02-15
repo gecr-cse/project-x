@@ -6,6 +6,7 @@ function fun(){
   echo "this is working";
 }*/
 function __construct(){
+  
   $this->servername = "localhost";
    $this->username = "root";
    $this->password = "";

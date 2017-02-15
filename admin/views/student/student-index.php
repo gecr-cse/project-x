@@ -22,7 +22,9 @@ $student=new studentManager();
     </thead>
     <tbody>
     <?php
+    //getting name ,roll_no,department name,email and mobile no form database
     $dept_list=$student->getAllStudent();
+
     $i=0;
     foreach($dept_list as $list){
         $i++;
@@ -33,9 +35,12 @@ $student=new studentManager();
             <td><?php echo $list['name'];?></td>
             <td>Name:<?php echo $list['roll_no'];?></td>
             <td><?php echo $list['email'].' / '.$list['mobile'];?></td>
-            <td><a href="<?php echo ADMIN_BASE_URL;?>views/student/student-edit.php?student_id=<?php echo $list['student_id'];?>">Edit</a><br>
-                <a href="<?php echo ADMIN_BASE_URL;?>system/controller/student-controller.php?action=deleteStudent&student_id=<?php echo $list['student_id']?>">Delete</a></td>
-
+            <td>
+              <a href="<?php echo ADMIN_BASE_URL;?>views/student/student-edit.php?student_id=<?php echo $list['student_id'];?>">Edit
+              </a><br>
+              <a href="<?php echo ADMIN_BASE_URL;?>system/controller/student-controller.php?action=deleteStudent&student_id=<?php echo $list['student_id']?>">Delete
+              </a>
+            </td>
 
         </tr>
 
@@ -45,5 +50,3 @@ $student=new studentManager();
 
     </tbody>
 </table>
-
-

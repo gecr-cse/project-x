@@ -28,6 +28,19 @@ class loginController
         $this->student=new studentManager();
     }
 
-    
+    function addStudent()
+    {
+      echo "will add student record in the database .....will wok next!";
+    }
+
+    function editStudent()
+    {
+      echo "will update the database .....currently woring!";
+    }
+
+    function deleteStudent()
+    {
+      echo "Will delete the sdudents record ......will work on this very soon";
+    }
 
 }
