@@ -2,7 +2,7 @@
 include_once "../../system/library/application.php";
 include_once "../../system/manager/department-manager.php";
 include_once "../../system/manager/student-manager.php";
-include_once "../includes/sidebar.php";
+//include_once "../includes/sidebar.php";
 $department=new departmentManager();
 $student=new studentManager();
 //is user set  or not

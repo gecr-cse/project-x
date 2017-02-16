@@ -39,7 +39,15 @@ class loginController
       'dept'=>$_REQUEST["stud_dept"]
       );
 
-        $this->student->add_student($student_data);
+        $res = $this->student->add_student($student_data);
+        if($res){
+          header("Location: ../../views/student/student-index.php");
+        }
+        else
+        {
+          $_SESSION["error"] = "failed to add the student";
+          header("Location: ../../views/student/student-index.php");
+        }
     }
 
     function editStudent()
@@ -53,16 +61,26 @@ class loginController
       'email'=>$_REQUEST["email"],
       'dept'=>$_REQUEST["stud_dept"]
       );
-      //print_r($student_data);
-      //echo $student_id;
-      $this->student->update_student($student_data);
+      $res = $this->student->update_student($student_data);
+      if($res)
+      {
+        header("Location: ../../views/student/student-index.php");
+      }
+      else
+      {
+        $_SESSION["error"] = "failed to update the student";
+        header("Location: ../../views/student/student-index.php");
+      }
     }
 
       function deleteStudent($std_id)
     {
-      //echo "Will delete the sdudents record ......will work on this very soon";
       echo $std_id;
-      $this->student->delete_student($std_id);
+      $res = $this->student->delete_student($std_id);
+      if($res)
+      {header("Location: ../../views/student/student-index.php");}
+      else
+      {echo "<br>".$_SESSION["error"] = "failed to add the student";}
     }
 
 }

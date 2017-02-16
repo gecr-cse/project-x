@@ -1,10 +1,7 @@
 <?php
 include_once "../../system/library/application.php";
-<<<<<<< HEAD
-=======
+
 include_once "dboard-css-files.php";
->>>>>>> dd5b1b66cd60425df60c557a3e45d687acd82935
-//echo ADMIN_BASE_URL;
 ?>
 <link rel="stylesheet" type="text/css" href="../../assets/css/dboard-style.css">
 
@@ -18,7 +15,5 @@ include_once "dboard-css-files.php";
 	    <li><a href="<?php echo ADMIN_BASE_URL;?>views/issues/issues-index.php">Issues</a></li>
 	    <li><a href="<?php echo ADMIN_BASE_URL;?>views/feedback/feedback-index.php">Feedback</a></li>
 	    <li><a href="../../system/controller/login-controller.php?action=logout">logout</a></li>
-	</ul>	
+	</ul>
 </div>
-
-
