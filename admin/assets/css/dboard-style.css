@@ -1,0 +1,48 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.dboard-header
+{
+  background-color: #1A237E;
+  height: 10vh;
+  position: fixed;
+}
+
+.dboard-sidebar
+{
+  padding:0px;
+  background-color: #303F9F;
+  top:10vh;
+  height: 90vh;
+  position: fixed;
+}
+
+ul
+{
+	width: 100%;
+	list-style-type: none;
+}
+
+a, a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+li
+{
+	text-transform: uppercase;
+	padding-left:1vh;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+}
+li:hover
+{
+	background-color: #1A237E;
+}
+@font-f
+{
+	
+}
