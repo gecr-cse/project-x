@@ -1,8 +1,10 @@
 <?php
 include_once "../../system/library/application.php";
-include_once "css-files.php";
+include_once "dboard-css-files.php";
 //echo ADMIN_BASE_URL;
 ?>
+<div class="container-fluid">
+<div class="row">
 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 dboard-header"></div>
 <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 dboard-sidebar">
 	<ul>
@@ -15,5 +17,7 @@ include_once "css-files.php";
 	    <li><a href="../../system/controller/login-controller.php?action=logout">logout</a></li>
 	</ul>	
 </div> 
+</div>
+</div>
 
 
