@@ -1,3 +1,8 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
 body {
   background-color: #fcfcfc; }
 
@@ -161,3 +166,5 @@ a.button-collapse.top-nav {
     cursor: text !important ;
 	position:relative  !important ;
 }
+
+
