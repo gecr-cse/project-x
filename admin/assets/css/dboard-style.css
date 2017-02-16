@@ -28,11 +28,19 @@ ul
 
 a, a:hover
 {
+	font-size: 1em;
 	text-decoration: none;
 	color: white;
 }
+
+a:hover
+{
+
+}
+
 li
 {
+
 	text-transform: uppercase;
 	padding-left:1vh;
 	padding-top: 1.5vh;
@@ -40,5 +48,6 @@ li
 }
 li:hover
 {
+	font-size: 1.05em;
 	background-color: #1A237E;
 }
