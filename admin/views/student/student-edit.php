@@ -5,11 +5,24 @@ include_once "../../system/manager/student-manager.php";
 include_once "../includes/sidebar.php";
 $department=new departmentManager();
 $student=new studentManager();
+//is user set  or not
+
+
+$app = new Application();
+$app->check_admin_login();
+
+if(isset($_SESSION["error"]) && $_SESSION["error"]!=NULL){
+  echo $_SESSION["error"];
+  //$_SESSION["error"]=NULL;
+}
+
+
 //echo "students id is : ".$_REQUEST['student_id'];
 $student_id=$_REQUEST['student_id'];
 $student_det=$student->getStudentById($student_id);
+
 ?>
-----------------------------student/add new student-------------------------------------
+----------------------------student/edit new student-------------------------------------
 
 <form action="../../system/controller/student-controller.php?action=editStudent" method="post">
     <input type="hidden" name="student_id" value="<?php echo $student_det[0]['student_id'];?>"/>
@@ -17,7 +30,7 @@ $student_det=$student->getStudentById($student_id);
     <?php
     // getting distinct names of all the departments
     //$dept_list=$department->getAllDept();?>
-    <select name="dept_id">
+    <select name="stud_dept">
         <?php
         $dept_list=$department->getAllDept();
         foreach($dept_list as $list){

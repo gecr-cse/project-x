@@ -5,10 +5,10 @@ include_once "../includes/sidebar.php";
 $department=new departmentManager();
 ?>
 ----------------------------student/add new student-------------------------------------
-
 <form action="<?php echo ADMIN_BASE_URL; ?>system/controller/student-controller.php?action=addStudent" method="post">
+  
     <br>Select Departement
-    <select name="dept_id">
+    <select name="stud_dept">
     <?php
     $dept_list=$department->getAllDept();
     foreach($dept_list as $list){

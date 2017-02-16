@@ -16,7 +16,8 @@ class departmentManager extends Application{
   }
 //function to return all the name of departments
   function getAllDept(){
-    $query = "SELECT distinct(dept_name) FROM department";
+    echo
+    $query = "SELECT dept_name,dept_id FROM department";
     $response = array();
     $result = mysqli_query($this->conn,$query);
     if ($result) {

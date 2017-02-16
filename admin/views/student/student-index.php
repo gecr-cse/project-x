@@ -3,6 +3,14 @@ include_once "../../system/library/application.php";
 include_once "../../system/manager/student-manager.php";
 include_once "../includes/sidebar.php";
 $student=new studentManager();
+
+$app = new Application();
+$app->check_admin_login();
+
+if(isset($_SESSION["error"]) && !empty($_SESSION["error"])){
+  echo $_SESSION["error"];
+  $_SESSION["error"]=NULL;
+}
 ?>
 -------------------------------student---------------------------------
 <br>
@@ -33,12 +41,12 @@ $student=new studentManager();
             <td><?php echo $i;?></td>
             <td><?php echo $list['dept_name'];?></td>
             <td><?php echo $list['name'];?></td>
-            <td>Name:<?php echo $list['roll_no'];?></td>
+            <td><?php echo $list['roll_no'];?></td>
             <td><?php echo $list['email'].' / '.$list['mobile'];?></td>
             <td>
               <a href="<?php echo ADMIN_BASE_URL;?>views/student/student-edit.php?student_id=<?php echo $list['student_id'];?>">Edit
               </a><br>
-              <a href="<?php echo ADMIN_BASE_URL;?>system/controller/student-controller.php?action=deleteStudent&student_id=<?php echo $list['student_id']?>">Delete
+              <a href="<?php echo ADMIN_BASE_URL;?>system/controller/student-controller.php?action=deleteStudent&student_id=<?php echo $list['student_id'];?>">Delete
               </a>
             </td>
 

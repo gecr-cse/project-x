@@ -1,6 +1,6 @@
 <?php
 include_once "../../system/library/application.php";
-echo ADMIN_BASE_URL;
+//echo ADMIN_BASE_URL;
 ?>
 
 <ul>
