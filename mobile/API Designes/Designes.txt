@@ -39,3 +39,126 @@ Failure Respose:-
   ]
 }
 --------------------------------------------------------------------------
+Name:Pallavi Bhuarya,Anupriya Pandey,Rakhi Verma,Ruchi Bhatt,Deepika Bariha
+Semester :8 sem
+time:12.00 p.m
+
+
+
+
+
+
+
+{
+ "requestmsg" : "ListOfDepartment "
+ " requestid " : " 01"
+ "requestdata": 
+	[
+		{
+
+
+ 			"RequestDepartmentList" :"yes"
+
+
+
+		}
+	]
+}
+
+
+---------------------------------------------------SUCCESS RESPONSE------------------------------------------------------------------
+{
+
+      "requestmsg" : "ListOfDepartment ",
+      " requestid " :" 01",
+      "reqresponse" :"success",
+      "responsecode":"02",
+      " resultdata" :[ 
+   {
+     "department" : [ 
+      {
+                      "department_name ": "computer  science",
+                      " department_id":"22",
+                      " department-img": " ",
+                      " department_strength": "400",
+
+                      " department_HOD":"A.K. Shrivastava"
+      },
+      {
+                       " department_name ": "mechanical ",
+                       " department_id":"16",
+                       " department-img": " ",
+                       " department_strength": "320",
+                       " department_HOD":"A.K. Sahay"
+      },
+      {                 "department_name ": " electronics and communication",
+                        "department_id":"24",
+                        "department-img": " ",
+                        " department_strength": "420",
+                        " department_HOD":"A.K. Shrivastava"
+    },
+    {                   "department_name" : "elctrical and electronics",
+                        " department_id":"",
+                        " department-img": " ",
+                        " department _strength": "240",
+                       " department_HOD":" abc"
+ 
+      },
+       {  
+                       " department_name": " civil",
+                       " department_id":"22",
+                       " department-img": " ",
+                      " department_strength": " 000",
+                      " department_HOD":" XYZ"
+        } 
+        ]
+ 
+   }]             
+
+}
+
+
+
+
+
+------------------------------------------------------ERROR RESPONSE--------------------------------------------
+
+
+{
+"requestmsg" : "ListOfDepartment ",
+ " requestid " :" 03",
+"reqresponse" :"failure",
+"responsecode":"03",
+" resultdata" :
+ [ {
+
+            "message" :"results not found"
+   } 
+  ]
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+{
+
+	"request_msg" :"Feedback",
+            "request_id" :" 111",
+            "request_data":
+                    
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
