@@ -2,6 +2,10 @@
 include_once "../../system/library/application.php";
 include_once "../../system/manager/department-manager.php";
 //include_once "../includes/sidebar.php";
+
+$app = new Application();
+$app->check_admin_login();
+
 $department=new departmentManager();
 ?>
 ----------------------------student/add new student-------------------------------------

@@ -9,7 +9,7 @@ $app->check_admin_login();
 
 if(isset($_SESSION["error"]) && !empty($_SESSION["error"])){
   echo $_SESSION["error"];
-  $_SESSION["error"]=NULL;
+  //$_SESSION["error"]=NULL;
 }
 ?>
 -------------------------------student---------------------------------
