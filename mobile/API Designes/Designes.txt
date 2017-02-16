@@ -39,3 +39,391 @@ Failure Respose:-
   ]
 }
 --------------------------------------------------------------------------
+Name:Pallavi Bhuarya,Anupriya Pandey,Rakhi Verma,Ruchi Bhatt,Deepika Bariha
+Semester :8 sem
+time:12.00 p.m
+
+
+
+
+
+
+
+{
+ "requestmsg" : "ListOfDepartment "
+ " requestid " : " 01"
+ "requestdata": 
+	[
+		{
+
+
+ 			"RequestDepartmentList" :"yes"
+
+
+
+		}
+	]
+}
+
+
+---------------------------------------------------SUCCESS RESPONSE------------------------------------------------------------------
+{
+
+      "requestmsg" : "ListOfDepartment ",
+      " requestid " :" 01",
+      "reqresponse" :"success",
+      "responsecode":"02",
+      " resultdata" :[ 
+   {
+     "department" : [ 
+      {
+                      "department_name ": "computer  science",
+                      " department_id":"22",
+                      " department-img": " ",
+                      " department_strength": "400",
+
+                      " department_HOD":"A.K. Shrivastava"
+      },
+      {
+                       " department_name ": "mechanical ",
+                       " department_id":"16",
+                       " department-img": " ",
+                       " department_strength": "320",
+                       " department_HOD":"A.K. Sahay"
+      },
+      {                 "department_name ": " electronics and communication",
+                        "department_id":"24",
+                        "department-img": " ",
+                        " department_strength": "420",
+                        " department_HOD":"A.K. Shrivastava"
+    },
+    {                   "department_name" : "elctrical and electronics",
+                        " department_id":"",
+                        " department-img": " ",
+                        " department _strength": "240",
+                       " department_HOD":" abc"
+ 
+      },
+       {  
+                       " department_name": " civil",
+                       " department_id":"22",
+                       " department-img": " ",
+                      " department_strength": " 000",
+                      " department_HOD":" XYZ"
+        } 
+        ]
+ 
+   }]             
+
+}
+
+
+
+
+
+------------------------------------------------------ERROR RESPONSE--------------------------------------------
+
+
+{
+"requestmsg" : "ListOfDepartment ",
+ " requestid " :" 03",
+"reqresponse" :"failure",
+"responsecode":"03",
+" resultdata" :
+ [ {
+
+            "message" :"results not found"
+   } 
+  ]
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+{
+
+	"request_msg" :"Feedback",
+            "request_id" :" 111",
+            "request_data":
+                    
+
+
+
+
+
+
+}
+
+name:rakhi verma,anupriya pandey, pallavi ,deepika,ruchi,anju,anuradha
+sem: 8th sem
+time:11.30AM
+date:15 feb
+
+
+---------------------------------------------------------------------1.NewsList--------------------------------------------------------------------------------------
+
+{
+"requestMessage":"NewsList",
+"requestId":"002",
+"requestData":
+	[
+		{	
+      
+    			" department_news" : "YES",
+   			
+		}
+	]	
+
+         
+}
+
+
+-----------------------------------------------------Response Success--------------------------------------------------------------------------------------------------
+{
+"requestMessage":"NewsList",
+"requestId":"002",
+"response_data":
+	[
+		{	"dept_name1":"All_Department",
+			"requestData":
+				[
+					{
+					"Message1":"heading",
+					"Message2":"detail",
+					"Message3":"images"	
+					}
+				]
+		},
+					
+			{"dept_name2":"CSE_Department",
+			"requestData":
+				[
+					{
+					"Message1":"heading",
+					"Message2":"detail",
+					"Message3":"images"	
+					}
+				]
+			},
+			{"dept_name3":"Civil_Department",
+			"requestData":
+				[
+					{
+					"Message1":"heading",
+					"Message2":"detail",
+					"Message3":"images"	
+					}
+				]
+},
+      {"dept_name4":"EEE_Department",
+			"requestData":
+				[
+					{
+					"Message1":"heading",
+					"Message2":"detail",
+					"Message3":"images"	
+					}
+				]
+      },
+			{"dept_name5":"Mechanical_Department",
+			"requestData":
+				[
+					{
+					"Message1":"heading",
+					"Message2":"detail",
+					"Message3":"images"	
+					}
+				]},
+			{"dept_name6":"ET&T_Department",
+			"requestData":
+				[
+					{
+					"Message1":"heading",
+					"Message2":"detail",
+					"Message3":"images"	
+					}
+				]
+		}
+	]
+
+
+}
+
+
+
+--------------------------------------------------Response Failure----------------------------------------------------------------------------------------------------
+
+{
+"requestMessage":"NewsList",
+"requestId":"002",
+"response": "failure",
+"response_data":"no data is available"
+}
+
+
+
+---------------------------------------------------------- 2.Issue--------------------------------------------------------------------------------------------------------
+
+{
+ "request_msg" :"issue "
+ " requestid " :" 03"
+"requestdata": 
+[{
+
+
+ "student_id" :"123"
+
+
+}]
+}
+
+
+---------------------------------------------------SUCCESS RESPONSE------------------------------------------------------------------
+
+{
+
+  "request_msg" : "issue",
+  
+    "request_id " :" 03",
+  
+    "req_response" :"success",
+  
+     "response_code":"30",
+  
+     " result_data" :[ 
+                   
+       {
+                    
+         "issue":[ 
+                                
+                   {"issue_title":[
+  
+                             {
+ "issue_desc":"issuedesc",
+                         
+                                "issue_image":[
+ 
+                                               {
+                                    
+                                                 "image_1":"image",
+      
+						"image_2":"image",
+               
+                                                "image_3":"image",
+                                                                                     
+						"image_4":"image",
+                                   
+                                                "image_5":"image"
+                                                                                     }
+                                         
+                                             ]
+                                         
+                                        
+       }
+                                           
+                                 ]
+                      
+                                
+                   }
+      
+                              
+                ]
+                    
+     }
+                  ]
+
+}
+                   
+
+  
+
+
+
+
+
+
+------------------------------------------------------ERROR RESPONSE--------------------------------------------
+
+
+"request_msg" : "feedback ",
+      " request_id " :" 04",
+      "req_response" :"success",
+      "response_code":"40",
+      " result_data": [ {
+
+              "message" :"no issues available"
+   } 
+  ]
+}
+
+
+
+
+
+
+---------------------------------------------------------------3.Feedback--------------------------------------------------------------------------------
+
+{
+ "request_msg" :"feedback "
+ " requestid " :" 04"
+"requestdata": 
+[{
+
+
+ "student_id" :"123"
+
+
+}]
+}
+
+
+---------------------------------------------------SUCCESS RESPONSE------------------------------------------------------------------
+{
+
+  "request_msg" : "feedback ",
+  "request_id " :" 04",
+  "req_response" :"success",
+  "response_code":"40",
+  " result_data" :[ 
+                   {
+                    "feedback":[ 
+                                {
+                                 "feedback_title":[
+                                                   {  "feedback_desc":"description of feedback"
+                                                   }
+                                                  ]
+                      
+                                }
+      
+                               ]
+                    }
+                   ]
+}
+
+
+
+
+
+------------------------------------------------------ERROR RESPONSE--------------------------------------------------------------------------------------
+
+
+"request_msg" : "feedback ",
+      " request_id " :" 04",
+      "req_response" :"failure",
+      "response_code":"40",
+      " result_data": [ {
+
+              "message" :"no feedback available"
+   } 
+  ]
+}
+
+
+
+
+
+
+
+
+
+
