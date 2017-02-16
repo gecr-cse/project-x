@@ -1,4 +1,4 @@
-localhost/pa/admin/api/v1.0/controller/news-controller.php?action=userRegister
+localhost/mycol/admin/api/v1.0/controller/news-controller.php?action=userRegister
 request:-
 {
   "requestMessage": "userRegister",
