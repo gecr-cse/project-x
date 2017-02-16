@@ -4,7 +4,7 @@ include_once "../library/application.php";
 include_once "../manager/department-manager.php";
 include_once "../plugins/messages/class.messages.php";
 include_once "../plugins/mails/mail.php";
-
+/*
 $login=new loginController();
 switch($_REQUEST['action'])
 {
@@ -24,8 +24,13 @@ class loginController
         $this->department=new departmentManager();
     }
 
-    
-
-
-
 }
+*/
+
+
+
+
+
+
+
+?>

@@ -1,13 +1,13 @@
 <?php
-	define('BASE_URL','http://'.$_SERVER["SERVER_NAME"].'/pa/');
+	define('BASE_URL','http://'.$_SERVER["SERVER_NAME"].'/project-x/');
 	define('ADMIN_BASE_URL',BASE_URL.'admin/');
 	define('IMAGE_URL','http://'.$_SERVER["SERVER_NAME"].'/raisejoy/admin/assets/img/');
 	define('UPLOAD_IMAGE_URL','http://'.$_SERVER["SERVER_NAME"].'/raisejoy/admin/uploads/img/');
 	define('FILE_URL','http://'.$_SERVER["SERVER_NAME"].'/raisejoy/admin/assets/file/');
 	define('SMARTY_TABLE','sm_');
-	
+
 	define('CURRENT_URL',"http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]);
-	
+
 	define('EMAIL_HOST','mail.creatise.in');
 	define('FROM_NAME','REDECON 2014');
 	define('FROM_EMAIL','info@redecon.in');
