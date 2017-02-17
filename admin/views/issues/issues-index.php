@@ -4,7 +4,6 @@ include_once "../../system/library/class.messages.php";
 include_once "../../system/manager/department-manager.php";
 include_once "../../system/manager/news-manager.php";
 include_once "../../system/manager/issue-manager.php";
-include_once "../includes/sidebar.php";
 $msg=new Messages();
 $department=new departmentManager();
 $issue=new issueManager();
