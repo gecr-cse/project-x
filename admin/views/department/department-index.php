@@ -14,11 +14,12 @@ $msg->display('all');
   <div class="row dboard-body">
     <?php include_once "../includes/sidebar.php"; ?>
     <div class="col-lg-10 col-md-9 col-lg-offset-2 col-md-offset-3">
-      List of departement
+    <h3>  List of Departement</h3>
+    <br>
       <table class="table table-striped">
           <thead>
               <tr>
-                  <th>Sl No.</th>
+                  <th>S.No.</th>
                   <th>Dept Name</th>
                   <th>Dept image</th>
                   <th>Dept Hod details</th>
