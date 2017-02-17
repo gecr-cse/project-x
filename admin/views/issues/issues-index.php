@@ -2,7 +2,6 @@
 include_once "../../system/library/application.php";
 include_once "../../system/library/class.messages.php";
 include_once "../../system/manager/department-manager.php";
-include_once "../../system/manager/news-manager.php";
 include_once "../../system/manager/issue-manager.php";
 //include_once "../includes/sidebar.php";
 
@@ -51,7 +50,7 @@ List of Issues
             <td><?php echo $list['issue_status'];?></td>
             <td><?php echo $list['added_on'];?></td>
             <td><a href="<?php echo ADMIN_BASE_URL;?>views/issues/issue-view.php?issue_id=<?php echo $list['issue_id'];?>"><!--View More-->view</a><br>
-                <a href="<?php echo ADMIN_BASE_URL;?>system/controller/issue-controller.php?action=deleteNews&del_issue_id=<?php echo $list['issue_id']?>">delete<!--Update Stauts--></a></td>
+                <a href="<?php echo ADMIN_BASE_URL;?>system/controller/issue-controller.php?action=deleteIssue&del_issue_id=<?php echo $list['issue_id']?>">delete<!--Update Stauts--></a></td>
         </tr>
     <?php
     }

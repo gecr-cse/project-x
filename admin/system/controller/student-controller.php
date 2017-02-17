@@ -7,17 +7,17 @@ include_once "../plugins/messages/class.messages.php";
 include_once "../plugins/mails/mail.php";
 
 
-$login=new loginController();
+$student_controller=new StudentController();
 switch($_REQUEST['action'])
 {
-    case 'addStudent':$login->addStudent();break;
-    case 'editStudent':$login->editStudent();break;
-    case 'deleteStudent':$login->deleteStudent($_REQUEST["student_id"]);break;
+    case 'addStudent':$student_controller->addStudent();break;
+    case 'editStudent':$student_controller->editStudent();break;
+    case 'deleteStudent':$student_controller->deleteStudent($_REQUEST["student_id"]);break;
 
 
 }
 
-class loginController
+class StudentController
 {
     function __construct()
     {
