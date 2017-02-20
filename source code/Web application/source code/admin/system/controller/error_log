@@ -1,0 +1,36 @@
+[16-Feb-2017 13:36:44 Asia/Calcutta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/creatmlt/public_html/demo/projectx/admin/system/library/application.php on line 67
+[16-Feb-2017 13:36:44 Asia/Calcutta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/creatmlt/public_html/demo/projectx/admin/system/library/application.php on line 67
+[16-Feb-2017 13:36:44 Asia/Calcutta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/creatmlt/public_html/demo/projectx/admin/system/library/application.php on line 67
+[16-Feb-2017 13:36:44 Asia/Calcutta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/creatmlt/public_html/demo/projectx/admin/system/library/application.php on line 67
+[16-Feb-2017 13:36:45 Asia/Calcutta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/creatmlt/public_html/demo/projectx/admin/system/library/application.php on line 67
+[16-Feb-2017 13:53:09 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 33
+[16-Feb-2017 15:50:14 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 33
+[16-Feb-2017 16:03:20 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 33
+[16-Feb-2017 17:18:49 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 33
+[16-Feb-2017 17:55:00 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 17:55:01 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 17:55:02 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 17:55:02 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 17:55:02 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 17:55:21 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 17:55:33 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 18:03:09 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/controller/news-controller.php on line 38
+[16-Feb-2017 18:03:09 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/plugins/imageCopy/doctupload_svr.php on line 13
+[16-Feb-2017 18:03:15 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/controller/news-controller.php on line 38
+[16-Feb-2017 18:03:15 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/plugins/imageCopy/doctupload_svr.php on line 13
+[16-Feb-2017 18:03:22 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/controller/news-controller.php on line 38
+[16-Feb-2017 18:03:22 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/plugins/imageCopy/doctupload_svr.php on line 13
+[16-Feb-2017 18:26:49 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 18:30:46 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 18:31:30 Asia/Calcutta] PHP Notice:  Undefined index: type in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 28
+[16-Feb-2017 18:34:31 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/controller/news-controller.php on line 39
+[16-Feb-2017 18:34:31 Asia/Calcutta] PHP Notice:  Undefined index: images in /home/creatmlt/public_html/demo/projectx/admin/system/plugins/imageCopy/doctupload_svr.php on line 13
+[16-Feb-2017 18:59:27 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 48
+[17-Feb-2017 12:02:13 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/creatmlt/public_html/demo/projectx/admin/system/controller/login-controller.php on line 48
+[17-Feb-2017 13:26:38] PHP Notice:  Undefined index:  type in /home4/urbanpur/public_html/projectx/admin/system/controller/login-controller.php on line 33
+[17-Feb-2017 13:28:08] PHP Notice:  Undefined index:  type in /home4/urbanpur/public_html/projectx/admin/system/controller/login-controller.php on line 33
+[17-Feb-2017 13:49:41] PHP Notice:  Undefined offset:  0 in /home4/urbanpur/public_html/projectx/admin/system/controller/login-controller.php on line 48
+[17-Feb-2017 13:57:42] PHP Notice:  Undefined offset:  0 in /home4/urbanpur/public_html/projectx/admin/system/controller/login-controller.php on line 48
+[17-Feb-2017 13:57:48] PHP Notice:  Undefined offset:  0 in /home4/urbanpur/public_html/projectx/admin/system/controller/login-controller.php on line 48
+[17-Feb-2017 15:58:07] PHP Notice:  Undefined index:  type in /home4/urbanpur/public_html/projectx/admin/system/controller/login-controller.php on line 33
+[17-Feb-2017 19:01:15] PHP Notice:  Undefined index:  type in /home4/urbanpur/public_html/projectx/admin/system/controller/login-controller.php on line 33

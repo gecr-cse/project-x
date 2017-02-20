@@ -1,0 +1,8 @@
+[16-Feb-2017 16:16:01 Asia/Calcutta] PHP Notice:  Undefined variable: student in /home/creatmlt/public_html/demo/projectx/admin/views/dashboard/dashboard-index.php on line 95
+[16-Feb-2017 16:16:01 Asia/Calcutta] PHP Fatal error:  Call to a member function getAllStudent() on null in /home/creatmlt/public_html/demo/projectx/admin/views/dashboard/dashboard-index.php on line 95
+[16-Feb-2017 16:16:14 Asia/Calcutta] PHP Notice:  Undefined variable: student in /home/creatmlt/public_html/demo/projectx/admin/views/dashboard/dashboard-index.php on line 95
+[16-Feb-2017 16:16:14 Asia/Calcutta] PHP Fatal error:  Call to a member function getAllStudent() on null in /home/creatmlt/public_html/demo/projectx/admin/views/dashboard/dashboard-index.php on line 95
+[16-Feb-2017 18:31:01 Asia/Calcutta] PHP Notice:  Undefined variable: student in /home/creatmlt/public_html/demo/projectx/admin/views/dashboard/dashboard-index.php on line 99
+[16-Feb-2017 18:31:01 Asia/Calcutta] PHP Fatal error:  Call to a member function getAllStudent() on null in /home/creatmlt/public_html/demo/projectx/admin/views/dashboard/dashboard-index.php on line 99
+[17-Feb-2017 15:34:02] PHP Notice:  Undefined variable: student in /home4/urbanpur/public_html/projectx/admin/views/dashboard/dashboard-index.php on line 99
+[17-Feb-2017 15:34:02] PHP Fatal error:  Call to a member function getAllStudent() on a non-object in /home4/urbanpur/public_html/projectx/admin/views/dashboard/dashboard-index.php on line 99

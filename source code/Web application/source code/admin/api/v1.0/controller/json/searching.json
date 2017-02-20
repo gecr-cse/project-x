@@ -1,0 +1,50 @@
+REQUEST :
+{
+  "requestMessage": "searchCause",
+  "requestId": "31",
+  "requestData": [
+{
+"searchFor":"marriage",
+"pageNumber":"1",
+"limit":"10"
+}
+  ]
+}
+RESPONSE SUCCESS:
+ {
+  "requestMessage": "searchCause",
+  "requestId": "31",
+  "resultCode": "success",
+  "resultData": [
+    {
+      "searchDetails": [
+        {
+          "totalCount": "1",
+          "page": "1"
+        }
+      ],
+      "searchList": [
+        {
+          "causeId": "1",
+          "causeName": "Marriage",
+          "categoryName": "cancer",
+          "causeUrl": "http://marriage_cause.com",
+          "communityId": "1",
+          "categoryUrl": "www.cancer.com",
+          "totalRaise": "20000",
+          "causeDescription": "it for a good cause",
+          "goal": "50000",
+          "donorsCount": "count"
+        }
+      ]
+    }
+  ]
+}
+RESPONSE FAILURE:
+{
+  "requestMessage": "searchCause",
+  "requestId": "31",
+  "resultCode": "Unsuccess",
+  "resultMessageCode": "110",
+  "resultData": "No result found"
+}

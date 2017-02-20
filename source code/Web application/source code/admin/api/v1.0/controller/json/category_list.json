@@ -1,0 +1,41 @@
+REQUEST
+{
+  "requestMessage": "causeCategories",
+  "requestId": "11",
+  "requestData": [
+{
+"searchFor":"causeCategories"
+}
+  ]
+}
+
+RESPONSE Success:
+{
+  "requestMessage": "causeCategories",
+  "requestId": "11",
+  "resultCode": "success",
+  "resultData": [
+    {
+      "searchList": [
+        {
+          "categoryName": "Family",
+          "categoryUrl": "http://family.com",
+          "categoryIcon": "0404125020160259.png"
+        },
+        {
+          "categoryName": "cancer",
+          "categoryUrl": "www.cancer.com",
+          "categoryIcon": "0404125320160887.png"
+        }
+      ]
+    }
+  ]
+}
+RESPONSE FAILURE:
+{
+  "requestMessage": "causeCategories",
+  "requestId": "11",
+  "resultCode": "Unsuccess",
+  "resultMessageCode": "110",
+  "resultData": "No result found"
+}

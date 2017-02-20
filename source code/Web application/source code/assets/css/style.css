@@ -1,0 +1,156 @@
+<!--
+/*************************************************************************
+ * Copyright (c) 2017 GEC CS Department
+ * Author: <Name> <Sem>
+ * Purpose : This page is defination of the CSS
+ * Created on : <Date of creation>
+ * NOTICE:  All information contained herein is, and remains
+ * the property of GEC Raipur CS Department. The intellectual and technical concepts contained
+ * herein are originated as part Industry Orientation program.
+ * Dissemination of this information or reproduction of this material
+ * is restricted unless prior written permission is obtained
+ * from GEC Raipur CS Department.
+ */
+-->
+html,body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+    /*background-color: #f1f2f3;*/
+    font-family: 'Open Sans', sans-serif;
+}
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.error{
+    color: #B94A48!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    
+    margin-top: 3px;
+	margin-bottom: 3px;
+}
+ul,ol
+{
+    padding:0px;
+    margin:0px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.mbt0
+{
+  margin-bottom: 0px !important;
+}
+
+.sec-mycollect
+{
+  padding: 10px;
+  background-color: white;
+
+}
+.sec-footer
+{
+  padding: 10px;
+  background-color:gray;
+  color: white;
+}
+.mc-login
+{
+  text-align:right;
+}
+.sec-about
+{
+  padding: 15px;
+}
+.md-box {
+    background-color: white;
+    padding: 10px;
+    margin-top:20px; 
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 2px 3px 0 rgba(0,0,0,0.12);
+}
+.container {
+    width: 80%;
+}
+nav ul a
+{
+  padding: 0 21px;
+  font-size: 18px;
+}
+.sec-dept
+{
+  padding: 15px;
+  background-color: #ebebeb;
+  min-height: 485px;
+}
+nav
+{
+  
+  background-color: #3498db;
+}
+.bntcolor
+{
+  background-color: #3498db !important;
+}
+.mt15
+{
+  margin-top:15px;
+}
+.ht
+{
+      height: 100px !important;
+}
+.sec-login
+{
+  min-height: 500px;padding: 15px;
+  background-color: #ebebeb;
+  margin-top: 50px;
+}
+.logincont
+{
+  width: 60% !important;
+}
+.mtbt
+{
+  margin-top:3px;
+  margin-bottom: 3px; 
+}
+.mc-html{
+	    line-height: 30px !important;
+}
+.mc-txtalgn
+{
+	text-align:justify;
+}
+.mc-mbt0{
+	margin-bottom:0px !important;
+}
+.mc-datetxt
+{
+	text-align:right;
+}
+.mcmtop
+{
+	    margin-top: 10px;
+}
+.mc-heading
+{
+	    margin-top: 12px;
+}
+.mcmtop10
+{
+	margin-top:20px;
+}

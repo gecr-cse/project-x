@@ -1,0 +1,573 @@
+localhost/pa/admin/api/v1.0/controller/news-controller.php?action=userRegister
+request:-
+{
+  "requestMessage": "userRegister",
+  "requestId": "001",
+  "requestData": [
+    {
+      "mobile_no": "9901027651"
+      
+    }
+  ]
+}
+
+success response:-
+{
+  "requestMessage": "userRegister",
+  "requestId": "001",
+  "response":"success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "An OTP is sent to your mobile... Please enter OTP sent to your mobile no.",
+	  "mobile_no":"9901027651",
+	  "otp":"123456"
+    }
+  ]
+}
+Failure Respose:- 
+
+{
+  "requestMessage": "userRegister",
+  "requestId": "001",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Mobile no not found in database. Please conctact admin"
+    }
+  ]
+}
+--------------------------------------------------------------------------
+after otp entered by the user
+localhost/pa/admin/api/v1.0/controller/news-controller.php?action=userOTP
+{
+  "requestMessage": "userOTP",
+  "requestId": "002",
+  "requestData": [
+    {
+      "mobile_no": "9901027651",
+	  "otp":"123456"
+    }
+  ]
+}
+---
+Success Response
+{
+  "requestMessage": "userOTP",
+  "requestId": "002",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "OTP Verified"
+    }
+  ]
+}
+Failure Response
+{
+  "requestMessage": "userOTP",
+  "requestId": "002",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Invalid OTP"
+    }
+  ]
+}
+----------------------------------------------------------------
+Displaying list of Dept
+admin/api/v1.0/controller/dept-controller.php?action=deptList
+{
+  "requestMessage": "deptList",
+  "requestId": "003",
+  "requestData": [
+    {
+      "list": "department"
+	  
+    }
+  ]
+}
+success response
+{
+  "requestMessage": "deptList",
+  "requestId": "003",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": [
+		{
+			"dept_id":"2",
+			"dept_name":"CSE",
+			"dept_image":"image_upload/abc.jpg"
+		},
+		{
+			"dept_id":"2",
+			"dept_name":"CSE",
+			"dept_image":"image_upload/abc.jpg"
+		},
+		{
+			"dept_id":"2",
+			"dept_name":"CSE",
+			"dept_image":"image_upload/abc.jpg"
+		},
+		{
+			"dept_id":"2",
+			"dept_name":"CSE",
+			"dept_image":"image_upload/abc.jpg"
+		}
+	  ]
+    }
+  ]
+}
+---
+Failure Response
+{
+  "requestMessage": "deptList",
+  "requestId": "003",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "No Department found"
+    }
+  ]
+}
+--------------------------------------------------------
+news list
+admin/api/v1.0/controller/news-controller.php?action=newsList
+Request:
+{
+  "requestMessage": "newsList",
+  "requestId": "004",
+  "requestData": [
+    {
+      "dept_id":"18"// if u want to display the news list of a particular department
+	  "limit_from":"20",
+	  "limit_to":"30"
+	}
+  ]
+}
+Success Response:
+{
+  "requestMessage": "newsList",
+  "requestId": "004",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "dept_id": "2",
+      "message": [
+        {
+          "news_id": "2",
+          "news_title": "news_title",
+          "news_description": "news_description",
+          "news_image": "image_upload/abc.jpg",
+          "news_added_on": "25-jan-2016"
+        },
+        {
+          "news_id": "2",
+          "news_title": "news_title",
+          "news_description": "news_description",
+          "news_image": "image_upload/abc.jpg",
+          "news_added_on": "25-jan-2016"
+        },
+        {
+          "news_id": "2",
+          "news_title": "news_title",
+          "news_description": "news_description",
+          "news_image": "image_upload/abc.jpg",
+          "news_added_on": "25-jan-2016"
+        }
+      ]
+    }
+  ]
+}
+---Failure Response
+{
+  "requestMessage": "newsList",
+  "requestId": "004",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "No News available in this Sector"
+    }
+  ]
+}
+------------------------------
+admin/api/v1.0/controller/news-controller.php?action=newsDetail
+News Detail page
+{
+  "requestMessage": "newsDetail",
+  "requestId": "005",
+  "requestData": [
+    {
+      "news_id": "34"// if it has to display all the news of all the department 
+	}
+  ]
+}
+---
+Success Response
+{
+  "requestMessage": "newsDetail",
+  "requestId": "005",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "dept_id": "2",
+      "dept_name": "CSE",
+      "naws_id": "34",
+      "news_title": "this is the title",
+      "news_description": "this is the description",
+      "added_on": "12-mar-2016",
+      "content_manager": "ram prasad",
+      "images": [
+        {
+          "image_url": "assets/images/a.jpg"
+        },
+        {
+          "image_url": "assets/images/a.jpg"
+        },
+        {
+          "image_url": "assets/images/a.jpg"
+        }
+      ]
+    }
+  ]
+}
+---
+Failure Response
+{
+  "requestMessage": "newsDetail",
+  "requestId": "005",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Details not available for this News"
+    }
+  ]
+}
+-----------------------------------------
+Views this own issues
+admin/api/v1.0/controller/issue-controller.php?action=issueList
+
+Request body
+{
+  "requestMessage": "issueList",
+  "requestId": "006",
+  "requestData": [
+    {
+      "student_id": "34" 
+	}
+  ]
+}
+---
+success response
+{
+  "requestMessage": "issueList",
+  "requestId": "006",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "student_id": "34",
+      "message": [
+        {
+          "issue_id": "2",
+          "issue_title": "title of the issue",
+          "issue_description": "description of the issue",
+          "issue_image": "image_upload/abc.jpg",
+          "issue_added_on": "25-jan-2016"
+        },
+        {
+          "issue_id": "2",
+          "issue_title": "title of the issue",
+          "issue_description": "description of the issue",
+          "issue_image": "image_upload/abc.jpg",
+          "issue_added_on": "25-jan-2016"
+        },
+        {
+          "issue_id": "2",
+          "issue_title": "title of the issue",
+          "issue_description": "description of the issue",
+          "issue_image": "image_upload/abc.jpg",
+          "issue_added_on": "25-jan-2016"
+        }
+      ]
+    }
+  ]
+}
+---
+Failure Response
+{
+  "requestMessage": "issueList",
+  "requestId": "006",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "no Isses raised by You"
+    }
+  ]
+}
+--------------------------------------------------
+Request Body
+admin/api/v1.0/controller/issue-controller.php?action=issueDetail
+{
+  "requestMessage": "issueDetail",
+  "requestId": "007",
+  "requestData": [
+    {
+      "issue_id": "34",
+	  "student_id":"45"
+	}
+  ]
+}
+----
+Success Response
+{
+  "requestMessage": "issueDetail",
+  "requestId": "007",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "dept_id": "2",
+      "dept_name": "CSE",
+      "issue_id": "34",
+      "issue_title": "this is the title",
+      "issue_description": "this is the description",
+	  "issue_status":"in process",
+      "added_on": "12-mar-2016",
+      "images": [
+        {
+          "image_url": "assets/images/a.jpg"
+        },
+        {
+          "image_url": "assets/images/a.jpg"
+        },
+        {
+          "image_url": "assets/images/a.jpg"
+        }
+      ]
+    }
+  ]
+}
+----
+Failure Response
+{
+  "requestMessage": "issueDetail",
+  "requestId": "007",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Details not available for this issue"
+    }
+  ]
+}
+-----------------------------------------------------------
+Request body-add new issue
+admin/api/v1.0/controller/issue-controller.php?action=issueAdd
+{
+  "requestMessage": "issueAdd",
+  "requestId": "008",
+  "requestData": [
+    {
+      "student_id": "45",
+      "dept_id": "34",
+      "issue_title": "this is the new issue",
+      "issue_description": "this is the issue description happening in here",
+      "image_count": "3",
+      "images": [
+        {
+          "image": "image send by converting it into base64"
+        },
+        {
+          "image": "image send by converting it into base64"
+        },
+        {
+          "image": "image send by converting it into base64"
+        }
+      ]
+    }
+  ]
+}
+-----
+Success Response
+{
+  "requestMessage": "issueAdd",
+  "requestId": "008",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Issue submitted successfully"
+    }
+  ]
+}
+---
+failure Response
+{
+  "requestMessage": "issueAdd",
+  "requestId": "008",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Not able to submit the issue ...Please try again later"
+    }
+  ]
+}
+---------------------
+Request body-Feedback list
+admin/api/v1.0/controller/feedback-controller.php?action=feedbackList
+Request body
+{
+  "requestMessage": "feedbackList",
+  "requestId": "009",
+  "requestData": [
+    {
+      "student_id": "34" 
+	}
+  ]
+}
+---
+success response
+{
+  "requestMessage": "feedbackList",
+  "requestId": "009",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "student_id": "34",
+      "message": [
+        {
+          "feedback_id": "2",
+          "feedback_title": "title of the issue",
+          "feedback_description": "description of the issue",
+          "feedback_added_on": "25-jan-2016"
+        },
+        {
+          "feedback_id": "2",
+          "feedback_title": "title of the issue",
+          "feedback_description": "description of the issue",
+          "feedback_added_on": "25-jan-2016"
+        },
+		{
+          "feedback_id": "2",
+          "feedback_title": "title of the issue",
+          "feedback_description": "description of the issue",
+          "feedback_added_on": "25-jan-2016"
+        }
+      ]
+    }
+  ]
+}
+---
+Failure Response
+{
+  "requestMessage": "feedbackList",
+  "requestId": "009",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "no feedback given by You"
+    }
+  ]
+}
+--------------------------------------------------
+admin/api/v1.0/controller/feedback-controller.php?action=feedbackDetail
+Request Body
+{
+  "requestMessage": "feedbackDetail",
+  "requestId": "010",
+  "requestData": [
+    {
+      "feedback_id": "34",
+	  "student_id":"45"
+	}
+  ]
+}
+----
+Success Response
+{
+  "requestMessage": "feedbackDetail",
+  "requestId": "010",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "dept_id": "2",
+      "dept_name": "CSE",
+      "feedback_id": "34",
+      "feedback_title": "this is the title",
+      "feedback_description": "this is the description",
+	  "feedback_status":"in process",
+      "added_on": "12-mar-2016"
+      ]
+    }
+  ]
+}
+----
+Failure Response
+{
+  "requestMessage": "feedbackDetail",
+  "requestId": "010",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Details not available for this feedback"
+    }
+  ]
+}
+-----------------------------------------------------------
+admin/api/v1.0/controller/feedback-controller.php?action=feedbackAdd
+Request body-add new issue
+{
+  "requestMessage": "feedbackAdd",
+  "requestId": "011",
+  "requestData": [
+    {
+      "student_id": "45",
+      "dept_id": "34",
+      "feedback_title": "this is the new issue",
+      "feedback_description": "this is the issue description happening in here"
+      
+    }
+  ]
+}
+-----
+Success Response
+{
+  "requestMessage": "feedbackAdd",
+  "requestId": "011",
+  "response": "success",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "feedback given successfully"
+    }
+  ]
+}
+---
+failure Response
+{
+  "requestMessage": "feedbackAdd",
+  "requestId": "011",
+  "response": "failure",
+  "responseCode": "200",
+  "resultData": [
+    {
+      "message": "Not able to submit the feedback ...Please try again later"
+    }
+  ]
+}

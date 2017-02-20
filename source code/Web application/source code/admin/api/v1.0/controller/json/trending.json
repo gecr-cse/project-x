@@ -1,0 +1,55 @@
+REQUEST:
+{
+  "requestMessage": "trendCauses",
+  "requestId": "21",
+  "requestData": [
+{
+"searchFor":"trending"
+}
+  ]
+}
+
+RESPONSE SUCCESS:
+{
+  "requestMessage": "trendCauses",
+  "requestId": "21",
+  "resultCode": "success",
+  "resultData": [
+    {
+      "searchList": [
+        {
+          "causeId": "1",
+          "causeName": "Marriage",
+          "categoryName": "cancer",
+          "causeUrl": "http://marriage_cause.com",
+          "communityId": "1",
+          "categoryUrl": "www.cancer.com",
+          "totalRaise": "20000",
+          "causeDescription": "it for a good cause",
+          "goal": "50000",
+          "donorsCount": "2"
+        },
+        {
+          "causeId": "2",
+          "causeName": "new",
+          "categoryName": "cancer",
+          "causeUrl": "http://new.com",
+          "communityId": "2",
+          "categoryUrl": "www.cancer.com",
+          "totalRaise": "5422",
+          "causeDescription": "dfgrgdgdrg",
+          "goal": "500000",
+          "donorsCount": "2"
+        }
+      ]
+    }
+  ]
+}
+RESPONSE FAILURE:
+{
+  "requestMessage": "trendCauses",
+  "requestId": "21",
+  "resultCode": "Unsuccess",
+  "resultMessageCode": "110",
+  "resultData": "No result found"
+}
