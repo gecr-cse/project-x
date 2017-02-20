@@ -1,14 +1,18 @@
 <?php
 include_once "../../system/library/application.php";
 include_once "../../system/manager/department-manager.php";
-include_once "../includes/sidebar.php";
+//include_once "../includes/sidebar.php";
+
+$app = new Application();
+$app->check_admin_login();
+
 $department=new departmentManager();
 ?>
 ----------------------------student/add new student-------------------------------------
-
 <form action="<?php echo ADMIN_BASE_URL; ?>system/controller/student-controller.php?action=addStudent" method="post">
+
     <br>Select Departement
-    <select name="dept_id">
+    <select name="stud_dept">
     <?php
     $dept_list=$department->getAllDept();
     foreach($dept_list as $list){

@@ -69,26 +69,19 @@ function loginProcess(){
 }
 //validation function to validate admin login
 function validate($id,$pass) {
-  //validdating the user name and password
     $sql = "SELECT user_name,user_pass FROM user_login";
-    //running th query to get list of all the users
     $result = $this->login->run_select_Query($sql);
-    //echo "showing<br>";
-    //print_r($result);
     $flag = 0;
 
     foreach ($result as $key) {
-      //echo $key['user_name'];
-        //echo "<br>".$pass." ".$key['user_pass'] ;
       if($id==$key['user_name']){
         if($pass==$key['user_pass']){
-          //echo "inside<br>".$id . " " .$key['user_name'];
           $_SESSION["user_id"] = $id;
           $_SESSION["user_pass"] = $pass;
           $flag=1;
           header("Location:../../views/dashboard/dashboard-index.php");
         }
-        
+
       }
     }
     if ($flag!=1) {
