@@ -1,0 +1,15 @@
+#myScrollSpy{
+  position:fixed;
+  z-index:99;
+  background-color: white;
+  height:100%;
+}
+.dboard-body{
+  position:absolute;
+  top:8.5%;
+  left:0;
+  padding:.5em;
+}
+.dboard-table{
+  widht:100%;
+}
