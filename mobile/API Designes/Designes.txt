@@ -57,7 +57,7 @@ time:12.00 p.m
 		{
 
 
- 			"RequestDepartmentList" :"yes"
+ 			"RequestDepartmentList" :"YES"
 
 
 
@@ -140,20 +140,6 @@ time:12.00 p.m
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-{
-
-	"request_msg" :"Feedback",
-            "request_id" :" 111",
-            "request_data":
-                    
-
-
-
-
-
-
-}
-
 name:rakhi verma,anupriya pandey, pallavi ,deepika,ruchi,anju,anuradha
 sem: 8th sem
 time:11.30AM
@@ -167,14 +153,11 @@ date:15 feb
 "requestId":"002",
 "requestData":
 	[
-		{	
-      
-    			" department_news" : "YES",
-   			
-		}
-	]	
-
-         
+		 {
+      "list": "department"
+	  
+    }
+  ]
 }
 
 
