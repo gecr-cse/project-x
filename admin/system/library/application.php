@@ -25,12 +25,13 @@ class Application {
     /* CONSTRUCTOR FUNCTION */
 
     function __construct() {
-
+        //echo "yah this is aplication<br>";
         $this->setHeaderVales();
         // Get the Database Connection Values
         $arrDBParams = @CONFIG::dbValues();
         // CREATE OBJECT FOR DB CONNECTION
         $this->db=new DbConnection();
+
         $this->dbConnect=$this->db->dbConnect($arrDBParams['HOST'], $arrDBParams['USERNAME'],$arrDBParams['PASSWORD'],$arrDBParams['DATABASE']);
 
 
@@ -40,6 +41,17 @@ class Application {
     /*
       This function is used to set Initial header.
      */
+    function check_admin_login()
+    {
+      if (!isset($_SESSION["user_id"]) && !isset($_SESSION["user_pass"])){
+        $_SESSION["error"] = "please login first";
+        header("Location: ../login/login-index.php");
+      }
+      if($_SESSION["user_id"]==NULL && $_SESSION["user_pass"]==NULL){
+        $_SESSION["error"] = "please login first";
+        header("Location: ../login/login-index.php");
+      }
+    }
 
     function setHeaderVales() {
         header("Cache-control: no-cache");
@@ -210,7 +222,7 @@ class Application {
             foreach($order as $ordKey=>$ord){
                 $order_by_sql.='`'.$ord.'`,';
             }
-            
+
             $order_by_sql=rtrim($order_by_sql,',')." ".$ordKey;
         }
 
@@ -221,7 +233,7 @@ class Application {
             $limit_sql=" LIMIT ".$page.", ".$limit;
         }
         $sql="SELECT $selection FROM ".$tables." $condition $order_by_sql $limit_sql";
-        
+
         return $sql;
     }
 
