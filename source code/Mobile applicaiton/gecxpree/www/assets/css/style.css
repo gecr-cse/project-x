@@ -1,0 +1,149 @@
+body{
+    background: #ffffff;
+}
+a{
+    color: #000000;
+}
+nav
+{
+    background-color: #3498db;
+    color: #ffffff;
+    line-height: 0px;
+}
+.nav-wrapper .brand-logo
+{
+    line-height: 56px;
+}
+.nav-wrapper .brand-logo img
+{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+
+}
+.no-margin{margin:0 0 0 0 !important;}
+.no-padding{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+.container-full{width: 100%;}
+
+/*logo*/
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px!important;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/*icons alignment*/
+.icons-alignment
+{
+   position: relative;
+}
+.icons-alignment li
+{
+    float: left;
+}
+.icons-alignment li a i
+{
+    font-size: 25px!important;
+    margin-top: 14px;
+}
+.custom a li
+{
+    border-bottom: 1px solid #e0e0e0!important;
+}
+.title_deatils
+{
+font-weight:500;
+font-size:17px;
+}
+.title
+{
+font-size:14px!important;
+font-weight: bold;
+line-height: 30px;
+}
+.ck_details
+{
+margin-top:3px!important;
+margin-bottom:0px!important;
+
+}
+/*.collection .collection-item.avatar .circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0px!important;
+}*/
+.app_name
+{
+font-size:20px;
+}
+
+.md-box {
+    background-color: #3498db;
+    padding: 5px;
+    color: white;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 2px 3px 0 rgba(0,0,0,0.12);*/
+}
+.md-subjectname
+{
+    margin-top: 3px;
+    margin-bottom:3px;
+    font-size: 16px; 
+}
+.card .card-content
+{
+    padding: 10px;
+}
+.issue-link
+{
+    background-color: #3498db;
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+
+}
+.md-box-empt {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 2px 3px 0 rgba(0,0,0,0.12);
+}
+.mc-login
+{
+    height: 448px;
+    padding: 15px;
+    /*background-color: #ebebeb;*/
+}
+.mc-mt100
+{
+        margin-top: 100px;
+}
+
+.star{
+      color: red !important;
+   display: block !important;
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+}
+#toast-container{
+        margin-bottom: 300px ! important;
+}

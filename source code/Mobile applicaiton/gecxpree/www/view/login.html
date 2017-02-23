@@ -1,0 +1,29 @@
+<headernav  data-info="GEC Xpress"></headernav>
+   <!-- *********************Login******************* -->
+   <section class="">
+   <form name="regForm" novalidate="">
+       <div class="container ">
+         <center><h5><img src="img/icon-92.png" class="responsive-img"></h5></center>
+         <center><h5>GEC Xpress</h5></center>
+       <div class="md-box-empt mc-mt100">
+
+            <div class="col l12 m12 s12">
+            </div>
+             <div class="row">
+                <div class="input-field col s12">
+                  <input id="phone" ng-model="mobileno" name="mobile" type="tel" class="validate" required="" ng-minlength=10 ng-maxlength=10 required="" >
+                  <label for="phone">Mobile Number</label>                    <span class="star" ng-show="submitted && regForm.mobile.$error.required">Please enter 10 digit mobile registered number </span>
+                     <span class="star" ng-show="regForm.mobile.$error.minlength">
+                 Mobile Number is required to be 10 digits.
+              </span>
+               <span class="star" ng-show="regForm.mobile.$error.maxlength">
+                 Mobile Number should not exceed 10 digits.
+              </span>
+                </div>
+              </div>
+              </div>
+       </div>
+        <p class="issue-link" ng-click="submitted=true;regForm.$valid && login(mobileno)">Send OTP</p>
+        </form>
+   </section>
+

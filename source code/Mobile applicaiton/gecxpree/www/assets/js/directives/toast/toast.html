@@ -1,0 +1,13 @@
+    <div class="{{toastClass}} {{toastType}} escape_press" ng-click="tapToast()">
+        <div ng-switch on="allowHtml">
+            <div ng-switch-default >
+                <div class="toast-icon">
+                    <i class="fa tsticon" aria-hidden="true"></i>
+                </div>
+                <div class="{{messageClass}}">
+                    {{message}}
+                </div>
+                <div class="close_toast">X</div>
+            </div>
+        </div>
+    </div>

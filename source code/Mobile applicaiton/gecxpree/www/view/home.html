@@ -1,0 +1,45 @@
+<headernav data-info="GEC Xpress"></headernav>
+<!-- *******************My college********************* -->
+<section>
+    <div class="container">
+        <div class="col l12 m12 s12">
+         <div class="card" >
+            <!--   <a ui-sref="news({dep_id:dep.dept_id})">
+                <div class="card-image">
+                   <img ng-src="{{dep.dept_image}}"  on-error="assets/images/slider/slider.jpg" class="responsive-img"> 
+                </div>
+                <div class="card-content md-subjectname">
+                  <p>{{dep.dept_name}}</p>
+                </div>
+                </a> -->
+                <ul class="collection">
+    <li class="collection-item avatar"  ng-repeat="dep in deptlist" ui-sref="news({dep_id:dep.dept_id})">
+     <!-- <a > -->
+      <img ng-src="{{dep.dept_image}}"  on-error="assets/images/no-image.png"  alt="" class="circle">
+      <span class="title">{{dep.dept_name}}</span>
+     <!--  <p>First Line <br>
+         Second Line
+      </p> -->
+     <!-- </a>  -->
+    </li>
+  </ul>
+            
+              </div>
+         <!--    <div class="md-box" ng-repeat="dep in deptlist">
+                <p class="md-subjectname" ui-sref="news({dep_id:dep.dept_id})">{{dep.dept_name}}</p>
+            </div> -->
+           <!--   <div class="md-box">
+                <p class="md-subjectname">Civil</p>
+            </div>
+             <div class="md-box">
+                <p class="md-subjectname">Mechanical</p>
+            </div>
+             <div class="md-box">
+                <p class="md-subjectname">Information Science</p>
+            </div>
+             <div class="md-box">
+                <p class="md-subjectname">Electrical and Eletronic</p>
+            </div> -->
+        </div>
+    </div>
+</section>

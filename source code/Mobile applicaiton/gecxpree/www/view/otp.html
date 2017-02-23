@@ -1,0 +1,28 @@
+<headernav  data-info="GEC Xpress"></headernav>
+
+<section class="">
+<form name="verifyForm" novalidate="">
+       <div class="container mc-login">
+       <div class="md-box-empt mc-mt100">
+            <div class="col l12 m12 s12">
+                <center><h5>MY COLLEGE</h5></center>
+            </div>
+             <div class="row">
+                <div class="input-field col s12">
+                <!---->
+                  <input id="otp"  pattern="^[0-9]{4}$"   type="number"  name="otpno" ng-model="otp" class="validate" required="">
+                  <label for="otp">Please enter your 4 digit Verification code</label>
+                  <span ng-show="submitted && verifyForm.otpno.$error.required" class="star">OTP is required.</span>
+                  <span ng-show="verifyForm.otpno.$error.pattern" class="star">Please enter a valid OTP.</span>
+                </div>
+                <div class="col l12 m12 s12">
+                     <span ui-sref="login">Edit Number</span>&nbsp;<span class="right">Resend OTP</span>
+                </div>
+              </div>
+              </div>
+       </div>
+          <section>
+    <p class="issue-link" ng-click="submitted=true;verifyForm.$valid && sendotp(otp)">REGISTER</p>
+</section>
+</form>
+   </section>

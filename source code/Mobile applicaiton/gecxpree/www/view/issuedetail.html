@@ -1,0 +1,60 @@
+<headernav  data-info="Issues Detail"></headernav>
+<!-- *******************Add Issues******************************* -->
+ <section>
+    <div class="container">
+                <div class="md-box-empt">
+                      <div class="row">
+                        <div class="col  s12 ">
+                             <div class="input-field col s12">
+                             <h6><b>IssueTitle:</b>  {{issuedata.issue_title}}</h6>
+                            
+                            </div>  
+                             <div class="input-field col s12">
+                             <h6><b>Description:</b> {{issuedata.issue_description}}</h6>
+                            </div>
+                            <div class="input-field col s12">
+                             <h6><b>Status:</b>   {{issuedata.issue_status}}</h6>
+                           
+                            </div>
+                            <div class="input-field col s12">
+                            <h6><b>Added On:</b>    {{issuedata.added_on | date }}</h6>
+                           
+                            </div>
+                            </div>
+                            <div class="col l12 m12 s12 ">
+                
+                                   <div class="col l12 m12 s12 mt15">
+                                        <!-- <div class="col s6 mt15" ng-repeat="img in issuedata.images">
+                                              <img ng-src="{{img.image_url}}" on-error="assets/images/slider/slider.jpg" class="responsive-img ht">
+                                        </div> -->
+                                          <div class="col s6 " ng-repeat="img in  issuedata.images" collapsible lazy-load>
+          <div class="team-member" >
+            <img src="{{img.image_url}}"
+                lazy-img="{{img.image_url}}"
+                class="responsive-img" >
+            <div class="details">
+              <center>
+            <a class="btn btn-icon btn-flat btn-dwn group1" href="{{img.image_url}}" target="_blank" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+              </center>
+            </div>
+
+          </div>
+        </div>
+                                     <!--    <div class="col s6 mt15">
+                                              <img src="assets/images/slider/slider.jpg" class="responsive-img ht">
+                                        </div>
+                                        <div class="col s6 mt15">
+                                              <img src="assets/images/slider/slider.jpg" class="responsive-img ht">
+                                        </div>
+                                        <div class="col s6 mt15">
+                                              <img src="assets/images/slider/slider.jpg" class="responsive-img ht">
+                                        </div>
+                                        <div class="col s6 mt15">
+                                              <img src="assets/images/slider/slider.jpg" class="responsive-img ht">
+                                        </div> -->
+                                   </div>
+                        </div>
+                     </div>  
+                 </div>
+    </div>
+</section>

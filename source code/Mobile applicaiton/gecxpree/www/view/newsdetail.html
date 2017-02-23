@@ -1,0 +1,78 @@
+
+<headernav  data-info="News Detail"></headernav>
+<!-- ***************News Section********************* -->
+<!-- <section>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+
+            
+                <div class="card-image">
+                   <img ng-src="{{news.news_image}}" on-error="assets/images/slider/slider1.jpg" class="responsive-img">
+                </div>
+
+                <div class="card-content">
+                  <p>{{news.news_description}}</p>
+                </div>
+            </div>
+             
+      </div>
+    </div>
+</section> -->
+ <section>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+    <div class="col  s12 ">
+                             <div class="input-field col s12">
+                             <h6><b>Title:</b>  {{news.news_title}}</h6>
+                            
+                            </div>  
+                             <div class="input-field col s12">
+                             <h6><b>Description:</b> {{news.news_description}}</h6>
+                            </div>
+                            <div class="input-field col s12">
+                            <h6><b>Added On:</b>{{news.added_on | date }}</h6>
+                           
+                            </div>
+                            <div class="col s12">
+                            <!-- https://www.youtube.com/watch?v= -->
+                          <!--   <b>Youtubelink:</b><a href="{{news.video_id}}" target="_blank">Click here to view video</a>
+ -->
+
+                          <!--    <b>Youtubelink:</b><a ng-click="viewvideo(news.video_id)">ddddClick here to view video</a> -->
+                            </div>
+                            <div ng-if="news.video_id!=''">
+                              <a  ng-click="viewvideo(news.video_id)" class="btn btn-primary youtube-link" target="_blank" class="activated">View Video</a>
+                            </div>
+                              
+                            </div>
+                
+            
+   <!--   <div class="col s6 card-image" ng-repeat="img in  news.images" >
+                    <img ng-src="{{img.image_url}}" on-error="assets/images/slider/slider1.jpg" class="responsive-img">
+                </div> -->
+                  <div class="col s6" ng-repeat="img in  news.images" collapsible lazy-load style="margin-top: 20px;">
+          <div class="team-member" >
+           <!--  <img src="assets/images/slider/slider1.jpg"
+                lazy-img="assets/images/slider/slider1.jpg"
+                class="responsive-img" > -->
+                <img src="{{img.image_url}}"
+                lazy-img="{{img.image_url}}"
+                class="responsive-img" >
+            <div class="details">
+              <center>
+            <a class="btn btn-icon btn-flat btn-dwn group1" href="{{img.image_url}}" target="_blank" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+              </center>
+            </div>
+
+          </div>
+        </div>
+
+              </div>
+            </div>
+      </div>
+    </div>
+</section>

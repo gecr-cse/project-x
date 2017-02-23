@@ -1,0 +1,70 @@
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+			<a class="brand-logo left"><span class="app_name">{{info}}</span></a>
+				<ul class=" icons-alignment" ng-hide="currentstate=='login' || currentstate=='otp' ">
+                <li class="right">
+                   <!--  <a class='dropdown-button' material-modal data-modaltarget="firstModal" data-activates='dropdown1' style="margin-top: 12px;"><i class="fa fa-ellipsis-v"></i></a><br> -->
+           <!-- <a href="#modal1" style="margin-top: 12px;"></a><br> -->
+             <a class="modal-trigger" href="#modal1" style="margin-top: 12px;"><i class="fa fa-ellipsis-v"></i></a>
+
+					  <!-- Dropdown Structure -->
+				<!-- 	  <ul id='dropdown1' class='dropdown-content' style="">
+						<li ui-sref="issues"><a href="">Issues</a></li>
+						<li class="divider"></li>
+						<li><a ui-sref="feedback">Feedback</a></li>
+					  </ul> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<!-- <div material-modal data-modaltarget="firstModal">Click modal MOdal 1</div>
+ -->
+<!-- 
+<div class="creatiseModal" id="firstModal">
+<div class="btn" material-modal-close>Close me</div>
+ <ul style="">
+            <li ui-sref="issues"><a href="">Issues</a></li>
+            <li class="divider"></li>
+            <li><a ui-sref="feedback">Feedback</a></li>
+            </ul>
+</div> -->
+<!-- Modal Trigger -->
+
+   <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+  <div class="modal-content">
+           <center> <div ui-sref="issues" class="modal-action modal-close"><a href="">Issues</a></div>
+           <hr>
+            <div><a ui-sref="feedback" class="modal-action modal-close">Feedback</a></div>
+            <hr>
+            <div><a ui-sref="home" class="modal-action modal-close">Department</a></div>
+            </center>
+            </div>
+  </div>
+
+ <script>
+ $(document).ready(function(){
+ // the "href" attribute of .modal-trigger must specify the modal ID that   wants to be triggered
+ $('.modal-trigger').leanModal();
+ });
+  </script>
+<script type="text/javascript">
+	
+	$('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+
+         
+</script>

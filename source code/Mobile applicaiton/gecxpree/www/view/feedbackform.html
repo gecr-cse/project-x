@@ -1,0 +1,44 @@
+<headernav  data-info="Feedback"></headernav>
+
+<!-- ******************feedback form*************************** -->
+   <section>
+       <div class="container">
+       <div class="md-box-empt">
+       <form name="fbForm" novalidate="">
+          <div class="row">
+            <div class="col l12 m12 s12 ">
+                <div class="col s12">
+                    <center><h5>Add Feedback</h5></center>
+                </div>
+                 <div class="input-field col s12">
+                  <input  id="name" type="text" ng-maxlength="100" ng-model="fb.title" name="title" class="validate" required="">
+                  <label for="name">Title</label>
+                   <span class="star" ng-show="submitted && fbForm.title.$error.required">Title is required</span>
+                   <span class="star" ng-show="fbForm.title.$error.maxlength">Allows only 100 character</span>
+                  <!--  {{fb.title.length}} -->
+                </div>  
+                <!--  <div class="input-field col s12">
+                  <input  id="semester" type="text" class="validate">
+                  <label for="semester">Student  Semester</label>
+                </div>
+                <select class="browser-default">
+                    <option value="" disabled selected>Department</option>
+                    <option value="1">ISE</option>
+                    <option value="2">CSE</option>
+                    <option value="3">MECH</option>
+                  </select> -->
+                <div class="input-field col s12">
+                  <textarea id="description" name="desc" ng-model="fb.desc" class="materialize-textarea" required="" maximum-words-validation="100"></textarea>
+                  <label for="description">Description</label>
+                   <span class="star" ng-show="submitted && fbForm.desc.$error.required">Description is required</span>
+                    <span class="star" ng-show="submitted && fbForm.desc.$invalid">Allows to enter 100 words</span>
+                </div>  
+                <div class="col s12 m12 l12">
+                    <center><a ng-click="submitted=true;fbForm.$valid && addfeedback(fb)" class="waves-effect waves-light btn bntcolor">Submit</a></center>
+                </div>  
+            </div>
+         </div>  
+         </form>
+     </div>
+       </div>
+   </section> 

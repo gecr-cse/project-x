@@ -1,0 +1,74 @@
+<headernav  data-info="Issue"></headernav>
+<!-- *******************Add Issues******************************* -->
+ <section>
+    <div class="container">
+                <div class="md-box-empt">
+                 <form name="issueForm" novalidate="">
+                      <div class="row">
+                        <div class="col  s12 ">
+                            <!--  <div class="input-field col s12">
+                              <input  id="name" type="text" ng-model="" class="validate">
+                              <label for="name">Student  Name</label>
+                            </div> -->  
+                             <div class="input-field col s12">
+                              <input  id="semester" name="title" ng-maxlength="100" type="text" ng-model="issue.title" class="validate" required="">
+                              <label for="semester">Title</label>
+                              <span class="star" ng-show="submitted && issueForm.title.$error.required">Title is required</span>
+                              <span class="star" ng-show="issueForm.title.$error.maxlength">Allows only 100 character</span>
+                            </div>
+                            <!-- <div class="input-field col s12">
+                              <input  id="dept" type="text" ng-model="issue.desc" class="validate">
+                              <label for="dept">Department</label>
+                            </div> -->
+                            <div class="input-field col s12">
+                              <textarea id="description" name="desc" ng-model="issue.desc" class="materialize-textarea" required="" maximum-words-validation="100"></textarea>
+                              <label for="description">Description</label>
+                              <span class="star" ng-show="submitted && issueForm.desc.$error.required">Description is required</span>
+                                <span class="star" ng-show="submitted && issueForm.desc.$invalid">Allows to enter 100 words</span>
+                            </div>
+                            </div>
+                            <div class="col l12 m12 s12 ">
+                      <!--          <button class="button button-full button-positive" ng-click="getImageSaveContact()">
+                    Upload Image
+                </button> -->
+                                <button class="button button-full button-positive" ng-click="getImageSaveContact()">
+                                Upload Image
+                                 </button>
+                         <div ng-repeat="images in imagelist" class="col s6">
+                           <img ng-src="{{images}}" class="responsive-img" />
+                         </div>
+
+
+<!--  <input type="file" ng-model="files" name="" base-sixty-four-input multiple=""  accept="image/*"  on-change="onChange()"> -->
+                                <!-- <input type="file" ng-model="filename"  filemul-upload my-upload multiple=""> -->
+                               <!--  jjj:
+                                <input type="file" ng-model="files" id="asd" multiple name=""> -->
+
+                                <!-- <div class="file-field input-field">
+                                  <div class="btn bntcolor">
+                                    <span>File</span>
+                                     <input type="file" ng-model="files" name="files" base-sixty-four-input multiple accept=".pdf" minsize="500" required  on-change="onChange()">
+                                  </div>
+                                  {{files}}==
+                                   <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>   -->
+
+
+
+
+                                   <!-- <div class="col l12 m12 s12 mt15">
+                                        <div class="col s6 mt15">
+                                              <img src="assets/images/slider/slider.jpg" class="responsive-img ht">
+                                        </div>
+                                   </div> -->
+                                  <div class="col l12 m12 s12 mt15">
+                                    <center><a class="waves-effect waves-light btn bntcolor" ng-click="submitted=true;issueForm.$valid && addissue(issue)">Submit</a></center>
+                                </div>
+                        </div>
+                     </div>  
+                     </form>
+                 </div>
+    </div>
+</section>
